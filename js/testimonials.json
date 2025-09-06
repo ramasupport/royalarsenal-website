@@ -1,0 +1,34 @@
+{
+  "testimonials": [
+    {
+      "name": "Amina K.",
+      "text": "My son's focus at school improved within weeks of starting at RAMA. The discipline and structure have been amazing for him.",
+      "rating": 5
+    },
+    {
+      "name": "Sami R.",
+      "text": "Friendly coaches and real progress. My daughter loves coming to class and has gained so much confidence.",
+      "rating": 5
+    },
+    {
+      "name": "Lina M.",
+      "text": "Safe environment, great discipline. The coaches really care about each student's development.",
+      "rating": 5
+    },
+    {
+      "name": "Ahmed H.",
+      "text": "RAMA has been a game-changer for my fitness journey. The structured approach really works.",
+      "rating": 5
+    },
+    {
+      "name": "Fatima A.",
+      "text": "The family-friendly atmosphere makes it perfect for our whole family. Highly recommended!",
+      "rating": 5
+    },
+    {
+      "name": "Omar S.",
+      "text": "Professional coaching with real results. My son has learned discipline and respect while having fun.",
+      "rating": 5
+    }
+  ]
+}

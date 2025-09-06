@@ -1,0 +1,18 @@
+# Gallery Images Placeholder
+
+Please replace these placeholder files with actual training photos:
+
+- training1.jpg - Students training kickboxing
+- training2.jpg - Kids learning martial arts  
+- training3.jpg - Competition team training
+- training4.jpg - Students with coaches
+- training5.jpg - Group training session
+- training6.jpg - Students practicing techniques
+- training7.jpg - Competition preparation
+- training8.jpg - Award ceremony
+
+All images should be:
+- Optimized to ≤200KB each
+- Include descriptive alt text
+- Use loading="lazy" for performance
+- Recommended size: 400x300px or similar aspect ratio

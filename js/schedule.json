@@ -1,0 +1,114 @@
+{
+  "schedule": [
+    {
+      "day": "Monday",
+      "classes": [
+        {
+          "time": "6:00-7:30 PM",
+          "program": "Competition Team",
+          "type": "competition"
+        }
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "classes": [
+        {
+          "time": "4:00-5:00 PM",
+          "program": "Preparation",
+          "type": "preparation"
+        },
+        {
+          "time": "5:00-6:00 PM",
+          "program": "Development",
+          "type": "development"
+        },
+        {
+          "time": "6:00-7:30 PM",
+          "program": "Competition Team",
+          "type": "competition"
+        }
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "classes": [
+        {
+          "time": "5:00-6:00 PM",
+          "program": "Development",
+          "type": "development"
+        },
+        {
+          "time": "6:00-7:30 PM",
+          "program": "Competition Team",
+          "type": "competition"
+        }
+      ]
+    },
+    {
+      "day": "Thursday",
+      "classes": [
+        {
+          "time": "5:00-6:00 PM",
+          "program": "Development",
+          "type": "development"
+        },
+        {
+          "time": "6:00-7:30 PM",
+          "program": "Competition Team",
+          "type": "competition"
+        }
+      ]
+    },
+    {
+      "day": "Friday",
+      "classes": [
+        {
+          "time": "2:00-3:00 PM",
+          "program": "Development",
+          "type": "development"
+        },
+        {
+          "time": "3:00-4:00 PM",
+          "program": "Preparation",
+          "type": "preparation"
+        },
+        {
+          "time": "4:00-5:30 PM",
+          "program": "Competition Team",
+          "type": "competition"
+        }
+      ]
+    },
+    {
+      "day": "Saturday",
+      "classes": [
+        {
+          "time": "11:00 AM-12:00 PM",
+          "program": "Development",
+          "type": "development"
+        },
+        {
+          "time": "12:00-1:00 PM",
+          "program": "Development",
+          "type": "development"
+        }
+      ]
+    },
+    {
+      "day": "Sunday",
+      "classes": [
+        {
+          "time": "11:00 AM-12:00 PM",
+          "program": "Preparation",
+          "type": "preparation"
+        },
+        {
+          "time": "12:00-1:00 PM",
+          "program": "Development",
+          "type": "development"
+        }
+      ]
+    }
+  ]
+}

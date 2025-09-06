@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Royal Arsenal Martial Arts Academy</title>
+    <meta name="description" content="Get in touch with Royal Arsenal Martial Arts Academy. Book your free trial class, ask questions, or learn more about our programs for kids and teens.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/logo/positive.svg">
+</head>
+<body class="font-inter bg-brand-bg text-brand-secondary">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-xl border-b border-brand-primary/20">
+        <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center">
+                <a href="index.html">
+                    <img src="assets/logo/logo.jpg" alt="RAMA Logo" class="h-14 w-auto rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                </a>
+            </div>
+            
+            <div class="hidden lg:flex space-x-8">
+                <a href="index.html" class="text-brand-secondary hover:text-brand-primary transition-colors font-medium relative group">
+                    Home
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-primary transition-all group-hover:w-full"></span>
+                </a>
+                <a href="programs.html" class="text-brand-secondary hover:text-brand-primary transition-colors font-medium relative group">
+                    Programs
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-primary transition-all group-hover:w-full"></span>
+                </a>
+                <a href="pricing.html" class="text-brand-secondary hover:text-brand-primary transition-colors font-medium relative group">
+                    Pricing
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-primary transition-all group-hover:w-full"></span>
+                </a>
+                <a href="timetable.html" class="text-brand-secondary hover:text-brand-primary transition-colors font-medium relative group">
+                    Timetable
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-primary transition-all group-hover:w-full"></span>
+                </a>
+                <a href="coaches.html" class="text-brand-secondary hover:text-brand-primary transition-colors font-medium relative group">
+                    Coaches
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-primary transition-all group-hover:w-full"></span>
+                </a>
+                <a href="enrollment.html" class="text-brand-secondary hover:text-brand-primary transition-colors font-medium relative group">
+                    Enrollment
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-primary transition-all group-hover:w-full"></span>
+                </a>
+                <a href="contact.html" class="text-brand-primary font-medium relative group">
+                    Contact
+                    <span class="absolute -bottom-1 left-0 w-full h-0.5 bg-brand-primary"></span>
+                </a>
+            </div>
+            
+            <div class="flex items-center space-x-4">
+                <a href="https://wa.me/971501156988?text=Hi%20RAMA%20team!%20I\'d%20like%20to%20book%20a%20free%20trial." target="_blank" class="bg-gradient-to-r from-brand-primary to-brand-accent text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300 transform">
+                    Book Free Trial
+                </a>
+                
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-btn" class="lg:hidden p-2 text-brand-secondary hover:text-brand-primary transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="lg:hidden hidden bg-white border-t border-brand-primary/20 shadow-lg">
+            <div class="container mx-auto px-4 py-4 space-y-4">
+                <a href="index.html" class="block text-brand-secondary hover:text-brand-primary transition-colors font-medium py-2">Home</a>
+                <a href="programs.html" class="block text-brand-secondary hover:text-brand-primary transition-colors font-medium py-2">Programs</a>
+                <a href="pricing.html" class="block text-brand-secondary hover:text-brand-primary transition-colors font-medium py-2">Pricing</a>
+                <a href="timetable.html" class="block text-brand-secondary hover:text-brand-primary transition-colors font-medium py-2">Timetable</a>
+                <a href="coaches.html" class="block text-brand-secondary hover:text-brand-primary transition-colors font-medium py-2">Coaches</a>
+                <a href="enrollment.html" class="block text-brand-secondary hover:text-brand-primary transition-colors font-medium py-2">Enrollment</a>
+                <a href="contact.html" class="block text-brand-primary font-medium py-2">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-brand-bg to-brand-surface py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-5xl md:text-6xl font-montserrat font-bold text-brand-secondary mb-6" data-aos="fade-up">
+                Contact Us
+            </h1>
+            <p class="text-xl text-brand-muted mb-8 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                Ready to start your martial arts journey? Get in touch with us today to book your free trial class.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mx-auto">
+                <form id="trial-form" class="bg-brand-bg rounded-xl p-8 shadow-lg" data-aos="fade-up" action="https://formspree.io/f/mandlzra" method="POST">
+                    <!-- Redirect to thank you page -->
+                    <input type="hidden" name="_redirect" value="https://royalarsenal.club/thank-you.html">
+                    <!-- Email subject -->
+                    <input type="hidden" name="_subject" value="New Trial Booking from RAMA Website">
+                    <!-- Primary recipient set in Formspree dashboard -->
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="name" class="block text-sm font-semibold text-brand-secondary mb-2">Full Name *</label>
+                            <input type="text" id="name" name="name" required 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-primary focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-semibold text-brand-secondary mb-2">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-primary focus:border-transparent">
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <label for="email" class="block text-sm font-semibold text-brand-secondary mb-2">Email Address</label>
+                        <input type="email" id="email" name="email" 
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-primary focus:border-transparent">
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="age-group" class="block text-sm font-semibold text-brand-secondary mb-2">Age Group</label>
+                            <select id="age-group" name="age-group" 
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-primary focus:border-transparent">
+                                <option value="">Select age group</option>
+                                <option value="kids">Kids (5-12)</option>
+                                <option value="teens">Teens (13-17)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="preferred-day" class="block text-sm font-semibold text-brand-secondary mb-2">Preferred Day</label>
+                            <select id="preferred-day" name="preferred-day" 
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-primary focus:border-transparent">
+                                <option value="">Select day</option>
+                                <option value="monday">Monday</option>
+                                <option value="tuesday">Tuesday</option>
+                                <option value="wednesday">Wednesday</option>
+                                <option value="thursday">Thursday</option>
+                                <option value="friday">Friday</option>
+                                <option value="saturday">Saturday</option>
+                                <option value="sunday">Sunday</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <label for="message" class="block text-sm font-semibold text-brand-secondary mb-2">Message (Optional)</label>
+                        <textarea id="message" name="message" rows="4" 
+                                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-primary focus:border-transparent"
+                                  placeholder="Tell us about your goals or any questions you have..."></textarea>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <label class="flex items-start">
+                            <input type="checkbox" name="consent" required 
+                                   class="mt-1 mr-3 text-brand-primary focus:ring-brand-primary">
+                            <span class="text-sm text-brand-muted">
+                                I agree to the <a href="privacy.html" class="text-brand-primary hover:underline">Privacy Policy</a> 
+                                and <a href="terms.html" class="text-brand-primary hover:underline">Terms of Service</a>. 
+                                I consent to being contacted about my trial booking.
+                            </span>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" 
+                            class="w-full bg-brand-primary text-white py-4 rounded-lg font-semibold text-lg hover:bg-brand-accent transition-colors">
+                        Book My Free Trial
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Hours Section -->
+    <section class="py-20 bg-brand-bg">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-montserrat font-bold text-center mb-16" data-aos="fade-up">Visit Us</h2>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Location Info -->
+                <div data-aos="fade-right">
+                    <div class="bg-white rounded-xl p-8 shadow-lg">
+                        <h3 class="text-2xl font-semibold mb-6 text-brand-primary">Location & Hours</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-brand-primary rounded-full mr-4 flex items-center justify-center flex-shrink-0">
+                                    <span class="text-white text-xl">📍</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-brand-secondary mb-2">Address</h4>
+                                    <p class="text-brand-muted">Al Quoz 1, Dubai<br>United Arab Emirates</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-brand-primary rounded-full mr-4 flex items-center justify-center flex-shrink-0">
+                                    <span class="text-white text-xl">🕒</span>
+                                </div>
+                                <div class="w-full">
+                                    <h4 class="font-semibold text-brand-secondary mb-4">Opening Hours</h4>
+                                    <div class="space-y-2 text-sm">
+                                        <div class="flex justify-between">
+                                            <span class="text-brand-muted">Monday - Thursday</span>
+                                            <span class="font-medium">4:00 PM - 8:00 PM</span>
+                                        </div>
+                                        <div class="flex justify-between">
+                                            <span class="text-brand-muted">Friday</span>
+                                            <span class="font-medium">2:00 PM - 6:00 PM</span>
+                                        </div>
+                                        <div class="flex justify-between">
+                                            <span class="text-brand-muted">Saturday - Sunday</span>
+                                            <span class="font-medium">10:00 AM - 2:00 PM</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-brand-primary rounded-full mr-4 flex items-center justify-center flex-shrink-0">
+                                    <span class="text-white text-xl">📞</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-brand-secondary mb-2">Contact</h4>
+                                    <p class="text-brand-muted">
+                                        <a href="tel:+971501156988" class="hover:text-brand-primary transition-colors">+971 50 115 6988</a><br>
+                                        <a href="mailto:contact@royalarsenal.club" target="_blank" class="hover:text-brand-primary transition-colors">contact@royalarsenal.club</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8 flex flex-col sm:flex-row gap-4">
+                            <a href="https://wa.me/971501156988?text=Hi%20RAMA%20team!%20I\'d%20like%20to%20book%20a%20free%20trial." target="_blank" 
+                               class="bg-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition-colors text-center">
+                                WhatsApp Us
+                            </a>
+                            <a href="tel:+971501156988" 
+                               class="bg-brand-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-brand-accent transition-colors text-center">
+                                Call Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Google Map -->
+                <div data-aos="fade-left">
+                    <div class="bg-white rounded-xl p-4 shadow-lg">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3612.2736!2d55.2!3d25.1!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDA2JzAwLjAiTiA1NcKwMTInMDAuMCJF!5e0!3m2!1sen!2sae!4v1234567890"
+                            width="100%" 
+                            height="400" 
+                            style="border:0; border-radius: 8px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Royal Arsenal Martial Arts Location">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Section -->
+    <section class="py-20 bg-green-500">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-montserrat font-bold text-white mb-6" data-aos="fade-up">
+                Quick Questions?
+            </h2>
+            <p class="text-xl text-green-100 mb-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                Chat with us on WhatsApp for instant answers to your questions.
+            </p>
+            <a href="https://wa.me/971501156988?text=Hi%20RAMA%20team!%20I\'d%20like%20to%20book%20a%20free%20trial." target="_blank" 
+               class="bg-white text-green-500 px-8 py-4 rounded-full font-semibold text-lg hover:shadow-lg hover:scale-105 transition-all duration-300 transform inline-flex items-center" 
+               data-aos="fade-up" data-aos-delay="400">
+                <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                </svg>
+                Chat on WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-secondary text-white py-6">
+        <div class="container mx-auto px-4">
+            <!-- Main Footer Content -->
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 mb-4">
+                <!-- Brand Section -->
+                <div class="flex items-center space-x-4">
+                    <img src="assets/logo/logo-dark.jpg" alt="RAMA Logo" class="h-10 w-auto rounded-lg shadow-md">
+                    <div>
+                        <p class="text-white text-sm font-semibold">Royal Arsenal Martial Arts</p>
+                        <p class="text-xs text-brand-muted">Licensed: 1523793</p>
+                    </div>
+                </div>
+                
+                <!-- Navigation Links -->
+                <div class="flex flex-wrap justify-center gap-6 text-sm">
+                    <a href="index.html" class="text-brand-muted hover:text-brand-primary transition-colors">Home</a>
+                    <a href="programs.html" class="text-brand-muted hover:text-brand-primary transition-colors">Programs</a>
+                    <a href="pricing.html" class="text-brand-muted hover:text-brand-primary transition-colors">Pricing</a>
+                    <a href="timetable.html" class="text-brand-muted hover:text-brand-primary transition-colors">Timetable</a>
+                    <a href="coaches.html" class="text-brand-muted hover:text-brand-primary transition-colors">Coaches</a>
+                    <a href="enrollment.html" class="text-brand-muted hover:text-brand-primary transition-colors">Enrollment</a>
+                    <a href="contact.html" class="text-brand-primary hover:text-white transition-colors">Contact</a>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="text-center md:text-right text-sm">
+                    <div class="flex items-center justify-center md:justify-end space-x-4">
+                        <a href="tel:+971501156988" class="text-brand-muted hover:text-brand-primary transition-colors">📞 Call</a>
+                        <a href="mailto:contact@royalarsenal.club" target="_blank" class="text-brand-muted hover:text-brand-primary transition-colors">contact@royalarsenal.club</a>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <!-- Instagram Section - Separate Row -->
+            <div class="text-center py-3 border-t border-brand-muted">
+                <a href="https://instagram.com/arsenal.dxb" target="_blank" class="inline-flex items-center bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-full text-sm hover:shadow-lg transition-all duration-300 group">
+                    <svg class="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.014 5.367 18.647.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.297-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.807.875 1.297 2.026 1.297 3.323s-.49 2.448-1.297 3.323c-.875.807-2.026 1.297-3.323 1.297zm7.718-1.297c-.875.807-2.026 1.297-3.323 1.297s-2.448-.49-3.323-1.297c-.807-.875-1.297-2.026-1.297-3.323s.49-2.448 1.297-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.807.875 1.297 2.026 1.297 3.323s-.49 2.448-1.297 3.323z"/>
+                    </svg>
+                    Follow @arsenal.dxb
+                </a>
+            </div>
+            
+            <!-- Bottom Footer -->
+            <div class="border-t border-brand-muted pt-3 mt-3">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-brand-muted text-xs mb-2 md:mb-0">&copy; 2025 Royal Arsenal Martial Arts. All rights reserved.</p>
+                    <div class="flex space-x-4 text-xs text-brand-muted">
+                        <a href="privacy.html" class="hover:text-brand-primary transition-colors">Privacy Policy</a>
+                        <span>•</span>
+                        <a href="terms.html" class="hover:text-brand-primary transition-colors">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>

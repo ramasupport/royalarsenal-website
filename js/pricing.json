@@ -1,0 +1,33 @@
+{
+  "pricing": [
+    {
+      "sessions": 1,
+      "monthly": 650,
+      "annual": 5000,
+      "description": "1 session per week"
+    },
+    {
+      "sessions": 2,
+      "monthly": 1000,
+      "annual": 7500,
+      "description": "2 sessions per week"
+    },
+    {
+      "sessions": 3,
+      "monthly": 1350,
+      "annual": 10500,
+      "description": "3 sessions per week"
+    },
+    {
+      "sessions": 4,
+      "monthly": 1500,
+      "annual": 11500,
+      "description": "4 sessions per week"
+    }
+  ],
+  "notes": {
+    "vat": "Prices exclude 5% VAT (added at checkout)",
+    "annualFreeze": "Annual plans include 1 month freeze",
+    "siblingDiscount": "Sibling discount: 10% off for 2nd child, 15% off for 3rd child"
+  }
+}
