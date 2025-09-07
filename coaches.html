@@ -195,6 +195,132 @@
         </div>
     </section>
 
+    <!-- Competition Gallery Section -->
+    <section class="py-20 bg-brand-bg">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-montserrat font-bold mb-4" data-aos="fade-up">Competition Highlights</h2>
+                <p class="text-xl text-brand-muted max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                    Celebrating our athletes' achievements in national and international competitions
+                </p>
+            </div>
+            
+            <!-- Gallery Filter Tabs -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12" data-aos="fade-up" data-aos-delay="300">
+                <button class="gallery-filter-btn active bg-brand-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-brand-accent transition-colors" data-filter="all">
+                    All Events
+                </button>
+                <button class="gallery-filter-btn bg-white text-brand-primary px-6 py-3 rounded-full font-semibold hover:bg-brand-primary hover:text-white transition-colors" data-filter="national">
+                    National Championships
+                </button>
+                <button class="gallery-filter-btn bg-white text-brand-primary px-6 py-3 rounded-full font-semibold hover:bg-brand-primary hover:text-white transition-colors" data-filter="world">
+                    World Competitions
+                </button>
+                <button class="gallery-filter-btn bg-white text-brand-primary px-6 py-3 rounded-full font-semibold hover:bg-brand-primary hover:text-white transition-colors" data-filter="training">
+                    Training Sessions
+                </button>
+            </div>
+            
+            <!-- Photo Gallery Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="competition-gallery">
+                <!-- National Championship Photos -->
+                <div class="gallery-item national" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer" onclick="openLightbox('https://picsum.photos/600/400?random=1')">
+                        <img src="https://picsum.photos/400/300?random=1" alt="UAE National Championship 2024" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg mb-2">UAE National Championship 2024</h3>
+                            <p class="text-brand-muted text-sm">Our athletes dominated with 5 gold medals</p>
+                            <div class="flex items-center mt-2">
+                                <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs">🏆 5 Gold</span>
+                                <span class="ml-2 text-xs text-gray-500">March 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item world" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer" onclick="openLightbox('https://picsum.photos/600/400?random=2')">
+                        <img src="https://picsum.photos/400/300?random=2" alt="World Cup Thailand 2024" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg mb-2">World Cup Thailand 2024</h3>
+                            <p class="text-brand-muted text-sm">International success on the world stage</p>
+                            <div class="flex items-center mt-2">
+                                <span class="bg-red-100 text-red-800 px-2 py-1 rounded-full text-xs">🌍 World Cup</span>
+                                <span class="ml-2 text-xs text-gray-500">January 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item training" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer" onclick="openLightbox('https://picsum.photos/600/400?random=3')">
+                        <img src="https://picsum.photos/400/300?random=3" alt="Intensive Training Camp" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg mb-2">Intensive Training Camp</h3>
+                            <p class="text-brand-muted text-sm">Preparing our champions for competition</p>
+                            <div class="flex items-center mt-2">
+                                <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">💪 Training</span>
+                                <span class="ml-2 text-xs text-gray-500">December 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item national" data-aos="fade-up" data-aos-delay="400">
+                    <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer" onclick="openLightbox('https://picsum.photos/600/400?random=4')">
+                        <img src="https://picsum.photos/400/300?random=4" alt="Junior Championships 2024" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg mb-2">Junior Championships 2024</h3>
+                            <p class="text-brand-muted text-sm">Young champions making their mark</p>
+                            <div class="flex items-center mt-2">
+                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">🥇 Junior</span>
+                                <span class="ml-2 text-xs text-gray-500">February 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item world" data-aos="fade-up" data-aos-delay="500">
+                    <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer" onclick="openLightbox('https://picsum.photos/600/400?random=5')">
+                        <img src="https://picsum.photos/400/300?random=5" alt="International Tournament" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg mb-2">International Tournament</h3>
+                            <p class="text-brand-muted text-sm">Competing against the world's best</p>
+                            <div class="flex items-center mt-2">
+                                <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs">🌟 International</span>
+                                <span class="ml-2 text-xs text-gray-500">November 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item training" data-aos="fade-up" data-aos-delay="600">
+                    <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer" onclick="openLightbox('https://picsum.photos/600/400?random=6')">
+                        <img src="https://picsum.photos/400/300?random=6" alt="Team Building Session" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg mb-2">Team Building Session</h3>
+                            <p class="text-brand-muted text-sm">Building champions together</p>
+                            <div class="flex items-center mt-2">
+                                <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded-full text-xs">👥 Team</span>
+                                <span class="ml-2 text-xs text-gray-500">October 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden flex items-center justify-center p-4">
+        <div class="relative max-w-4xl max-h-full">
+            <button onclick="closeLightbox()" class="absolute top-4 right-4 text-white text-3xl hover:text-gray-300 z-10">
+                ×
+            </button>
+            <img id="lightbox-image" src="" alt="" class="max-w-full max-h-full object-contain rounded-lg">
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="bg-brand-secondary text-white py-6">
         <div class="container mx-auto px-4">

@@ -329,4 +329,79 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Header scroll effect
     window.addEventListener('scroll', handleHeaderScroll);
+    
+    // Initialize gallery
+    initializeGallery();
+});
+
+// Gallery functionality
+function initializeGallery() {
+    const filterButtons = document.querySelectorAll('.gallery-filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const filter = this.getAttribute('data-filter');
+            
+            // Update active button
+            filterButtons.forEach(btn => {
+                btn.classList.remove('active', 'bg-brand-primary', 'text-white');
+                btn.classList.add('bg-white', 'text-brand-primary');
+            });
+            this.classList.add('active', 'bg-brand-primary', 'text-white');
+            this.classList.remove('bg-white', 'text-brand-primary');
+            
+            // Filter gallery items
+            galleryItems.forEach(item => {
+                if (filter === 'all' || item.classList.contains(filter)) {
+                    item.style.display = 'block';
+                    item.style.opacity = '0';
+                    setTimeout(() => {
+                        item.style.opacity = '1';
+                    }, 100);
+                } else {
+                    item.style.opacity = '0';
+                    setTimeout(() => {
+                        item.style.display = 'none';
+                    }, 300);
+                }
+            });
+        });
+    });
+}
+
+// Lightbox functionality
+function openLightbox(imageSrc) {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightbox-image');
+    
+    if (lightbox && lightboxImage) {
+        lightboxImage.src = imageSrc;
+        lightbox.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+function closeLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    
+    if (lightbox) {
+        lightbox.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+    }
+}
+
+// Close lightbox on escape key
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeLightbox();
+    }
+});
+
+// Close lightbox on background click
+document.addEventListener('click', function(e) {
+    const lightbox = document.getElementById('lightbox');
+    if (e.target === lightbox) {
+        closeLightbox();
+    }
 });
