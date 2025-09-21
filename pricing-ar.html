@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأسعار - الأكاديمية الملكية للفنون القتالية</title>
+    <meta name="description" content="باقات تدريب الفنون القتالية بأسعار معقولة للأطفال والمراهقين. خيارات أسعار مرنة من 1-4 جلسات أسبوعياً مع خصومات سنوية متاحة.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- Noto Sans Arabic for Arabic text -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/logo/positive.svg">
+</head>
+<body class="font-arabic bg-brand-bg text-brand-secondary" dir="rtl">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-xl border-b border-brand-primary/20">
+        <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center">
+                <a href="index-ar.html">
+                    <img src="assets/logo/logo.jpg" alt="شعار راما" class="logo-light h-14 w-auto rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <img src="assets/logo/logo-dark.jpg" alt="شعار راما" class="logo-dark h-14 w-auto rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                </a>
+            </div>
+            
+            <div class="hidden lg:flex space-x-8 space-x-reverse">
+                <a href="index-ar.html" class="text-brand-secondary hover:text-brand-primary transition-colors font-medium relative group">
+                    الرئيسية
+                    <span class="absolute -bottom-1 right-0 w-0 h-0.5 bg-brand-primary transition-all group-hover:w-full"></span>
+                </a>
+                <a href="programs-ar.html" class="text-brand-secondary hover:text-brand-primary transition-colors font-medium relative group">
+                    البرامج
+                    <span class="absolute -bottom-1 right-0 w-0 h-0.5 bg-brand-primary transition-all group-hover:w-full"></span>
+                </a>
+                <a href="pricing-ar.html" class="text-brand-primary font-medium relative group">
+                    الأسعار
+                    <span class="absolute -bottom-1 right-0 w-full h-0.5 bg-brand-primary"></span>
+                </a>
+                <a href="timetable-ar.html" class="text-brand-secondary hover:text-brand-primary transition-colors font-medium relative group">
+                    الجدول الزمني
+                    <span class="absolute -bottom-1 right-0 w-0 h-0.5 bg-brand-primary transition-all group-hover:w-full"></span>
+                </a>
+                <a href="coaches-ar.html" class="text-brand-secondary hover:text-brand-primary transition-colors font-medium relative group">
+                    المدربون
+                    <span class="absolute -bottom-1 right-0 w-0 h-0.5 bg-brand-primary transition-all group-hover:w-full"></span>
+                </a>
+                <a href="competitions-ar.html" class="text-brand-secondary hover:text-brand-primary transition-colors font-medium relative group">
+                    المسابقات
+                    <span class="absolute -bottom-1 right-0 w-0 h-0.5 bg-brand-primary transition-all group-hover:w-full"></span>
+                </a>
+                <a href="enrollment-ar.html" class="text-brand-secondary hover:text-brand-primary transition-colors font-medium relative group">
+                    التسجيل
+                    <span class="absolute -bottom-1 right-0 w-0 h-0.5 bg-brand-primary transition-all group-hover:w-full"></span>
+                </a>
+                <a href="contact-ar.html" class="text-brand-secondary hover:text-brand-primary transition-colors font-medium relative group">
+                    اتصل بنا
+                    <span class="absolute -bottom-1 right-0 w-0 h-0.5 bg-brand-primary transition-all group-hover:w-full"></span>
+                </a>
+            </div>
+            
+            <div class="flex items-center space-x-4 space-x-reverse">
+                <!-- Language Switcher -->
+                <div class="flex items-center bg-gray-100 rounded-full p-1">
+                    <a href="pricing.html" class="px-3 py-1 text-sm font-medium text-gray-600 hover:text-brand-primary transition-colors rounded-full">
+                        EN
+                    </a>
+                    <a href="pricing-ar.html" class="px-3 py-1 text-sm font-medium bg-brand-primary text-white rounded-full">
+                        عربي
+                    </a>
+                </div>
+                
+                <a href="contact-ar.html" class="bg-gradient-to-r from-brand-primary to-brand-accent text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300 transform">
+                    احجز تجربة مجانية
+                </a>
+                
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-btn" class="lg:hidden p-2 text-brand-secondary hover:text-brand-primary transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="lg:hidden hidden bg-white border-t border-brand-primary/20 shadow-lg">
+            <div class="container mx-auto px-4 py-4 space-y-4">
+                <a href="index-ar.html" class="block text-brand-secondary hover:text-brand-primary transition-colors font-medium py-2">الرئيسية</a>
+                <a href="programs-ar.html" class="block text-brand-secondary hover:text-brand-primary transition-colors font-medium py-2">البرامج</a>
+                <a href="pricing-ar.html" class="block text-brand-primary font-medium py-2">الأسعار</a>
+                <a href="timetable-ar.html" class="block text-brand-secondary hover:text-brand-primary transition-colors font-medium py-2">الجدول الزمني</a>
+                <a href="coaches-ar.html" class="block text-brand-secondary hover:text-brand-primary transition-colors font-medium py-2">المدربون</a>
+                <a href="competitions-ar.html" class="block text-brand-secondary hover:text-brand-primary transition-colors font-medium py-2">المسابقات</a>
+                <a href="enrollment-ar.html" class="block text-brand-secondary hover:text-brand-primary transition-colors font-medium py-2">التسجيل</a>
+                <a href="contact-ar.html" class="block text-brand-secondary hover:text-brand-primary transition-colors font-medium py-2">اتصل بنا</a>
+                
+                <!-- Mobile Language Switcher -->
+                <div class="flex items-center justify-center space-x-2 space-x-reverse pt-4 border-t border-gray-200">
+                    <a href="pricing.html" class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-brand-primary transition-colors border border-gray-300 rounded-full">
+                        English
+                    </a>
+                    <a href="pricing-ar.html" class="px-4 py-2 text-sm font-medium bg-brand-primary text-white rounded-full">
+                        عربي
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-brand-bg to-brand-surface py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-5xl md:text-6xl font-montserrat font-bold text-brand-secondary mb-6" data-aos="fade-up">
+                خطط الأسعار
+            </h1>
+            <p class="text-xl text-brand-muted mb-8 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                باقات تدريب مرنة مصممة لتناسب جدولك وميزانيتك. اختر الخطة التي تناسب طفلك.
+            </p>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-montserrat font-bold mb-4" data-aos="fade-up">اختر خطتك</h2>
+                <p class="text-xl text-brand-muted max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                    أسعار شفافة مع خيارات مرنة لجميع الاحتياجات
+                </p>
+            </div>
+            
+            <!-- Pricing Cards -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+                <!-- 1 Session -->
+                <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-200" data-aos="fade-up">
+                    <div class="text-center">
+                        <h3 class="text-xl font-semibold mb-2">جلسة واحدة</h3>
+                        <div class="text-3xl font-bold text-brand-primary mb-4">400 درهم</div>
+                        <p class="text-brand-muted text-sm mb-6">في الأسبوع</p>
+                        <a href="contact-ar.html" class="w-full bg-brand-primary text-white py-3 px-6 rounded-full font-semibold hover:bg-brand-accent transition-colors">
+                            احجز الآن
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 2 Sessions -->
+                <div class="bg-white rounded-xl p-6 shadow-lg border border-brand-primary" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-center">
+                        <div class="bg-brand-primary text-white px-3 py-1 rounded-full text-sm font-semibold mb-4">الأكثر شعبية</div>
+                        <h3 class="text-xl font-semibold mb-2">جلستان</h3>
+                        <div class="text-3xl font-bold text-brand-primary mb-4">600 درهم</div>
+                        <p class="text-brand-muted text-sm mb-6">في الأسبوع</p>
+                        <a href="contact-ar.html" class="w-full bg-brand-primary text-white py-3 px-6 rounded-full font-semibold hover:bg-brand-accent transition-colors">
+                            احجز الآن
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 3 Sessions -->
+                <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-200" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-center">
+                        <h3 class="text-xl font-semibold mb-2">ثلاث جلسات</h3>
+                        <div class="text-3xl font-bold text-brand-primary mb-4">700 درهم</div>
+                        <p class="text-brand-muted text-sm mb-6">في الأسبوع</p>
+                        <a href="contact-ar.html" class="w-full bg-brand-primary text-white py-3 px-6 rounded-full font-semibold hover:bg-brand-accent transition-colors">
+                            احجز الآن
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 4 Sessions -->
+                <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-200" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-center">
+                        <h3 class="text-xl font-semibold mb-2">أربع جلسات</h3>
+                        <div class="text-3xl font-bold text-brand-primary mb-4">800 درهم</div>
+                        <p class="text-brand-muted text-sm mb-6">في الأسبوع</p>
+                        <a href="contact-ar.html" class="w-full bg-brand-primary text-white py-3 px-6 rounded-full font-semibold hover:bg-brand-accent transition-colors">
+                            احجز الآن
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Information Section -->
+    <section class="py-20 bg-brand-bg">
+        <div class="container mx-auto px-4">
+            <div class="text-center space-y-6" data-aos="fade-up" data-aos-delay="400">
+                <!-- Annual Plans Notice -->
+                <div class="bg-brand-primary text-white px-6 py-3 rounded-full inline-block">
+                    <span class="font-semibold">الخطط السنوية تشمل تجميد شهر واحد</span>
+                </div>
+                
+                <!-- Pricing Details Grid -->
+                <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+                    <!-- General Pricing Info -->
+                    <div class="bg-white rounded-xl p-6 shadow-lg border-r-4 border-brand-primary">
+                        <div class="flex items-center mb-4">
+                            <span class="material-icons text-brand-primary text-2xl ml-3 no-flip">receipt</span>
+                            <h3 class="text-lg font-semibold text-brand-secondary">تفاصيل الأسعار</h3>
+                        </div>
+                        <div class="space-y-2 text-sm text-right">
+                            <div class="flex items-center justify-end">
+                                <span class="font-semibold">الأسعار لا تشمل ضريبة القيمة المضافة 5% (تُضاف عند الدفع)</span>
+                                <span class="material-icons text-brand-primary text-sm ml-2 no-flip">info</span>
+                            </div>
+                            <div class="flex items-center justify-end">
+                                <span class="font-semibold">خصم الأشقاء: 10% للطفل الثاني، 15% للطفل الثالث</span>
+                                <span class="material-icons text-green-500 text-sm ml-2 no-flip">family_restroom</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Training Uniform Info -->
+                    <div class="bg-white rounded-xl p-6 shadow-lg border-r-4 border-orange-500">
+                        <div class="flex items-center mb-4">
+                            <span class="material-icons text-orange-500 text-2xl ml-3 no-flip">checkroom</span>
+                            <h3 class="text-lg font-semibold text-brand-secondary">زي التدريب</h3>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex items-center text-sm justify-end">
+                                <span class="font-semibold text-orange-600">زي التدريب غير مشمول في الرسوم</span>
+                                <span class="material-icons text-orange-500 text-sm ml-2 no-flip">warning</span>
+                            </div>
+                            <div class="bg-brand-bg rounded-lg p-3 border border-orange-200">
+                                <div class="text-center">
+                                    <div class="text-lg font-bold text-brand-secondary">القميص: 80 درهم</div>
+                                    <div class="text-xs text-brand-muted">(باستثناء ضريبة القيمة المضافة 5%)</div>
+                                    <div class="text-orange-600 font-medium text-sm mt-1">يجب شراؤه بشكل منفصل</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-secondary text-white py-6">
+        <div class="container mx-auto px-4">
+            <!-- Main Footer Content -->
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 mb-4">
+                <!-- Brand Section -->
+                <div class="flex items-center space-x-4 space-x-reverse">
+                    <img src="assets/logo/logo-dark.jpg" alt="شعار راما" class="h-10 w-auto rounded-lg shadow-md">
+                    <div>
+                        <p class="text-white text-sm font-semibold">الأكاديمية الملكية للفنون القتالية</p>
+                        <p class="text-xs text-brand-muted">مرخصة: 1523793</p>
+                    </div>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 md:space-x-reverse text-sm">
+                    <a href="tel:+971501156988" class="text-gray-300 hover:text-brand-primary transition-colors">
+                        <span class="material-icons ml-1 text-sm">phone</span>اتصل
+                    </a>
+                    <a href="mailto:contact@royalarsenal.club" class="text-gray-300 hover:text-brand-primary transition-colors">
+                        <span class="material-icons ml-1 text-sm">email</span>راسلنا
+                    </a>
+                    <a href="https://wa.me/971501156988" target="_blank" class="text-gray-300 hover:text-brand-primary transition-colors">
+                        <span class="material-icons ml-1 text-sm">chat</span>واتساب
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="border-t border-gray-700 pt-4 text-center text-sm text-gray-400">
+                <p>الأكاديمية الملكية للفنون القتالية. جميع الحقوق محفوظة &copy; 2025.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 100
+        });
+
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

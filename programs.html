@@ -13,6 +13,9 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
     <!-- Custom Styles -->
     <link rel="stylesheet" href="css/styles.css">
     
@@ -25,7 +28,8 @@
         <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
             <div class="flex items-center">
                 <a href="index.html">
-                    <img src="assets/logo/logo.jpg" alt="RAMA Logo" class="h-14 w-auto rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <img src="assets/logo/logo.jpg" alt="RAMA Logo" class="logo-light h-14 w-auto rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <img src="assets/logo/logo-dark.jpg" alt="RAMA Logo" class="logo-dark h-14 w-auto rounded-lg shadow-md hover:shadow-lg transition-shadow">
                 </a>
             </div>
             
@@ -65,6 +69,16 @@
             </div>
             
             <div class="flex items-center space-x-4">
+                <!-- Language Switcher -->
+                <div class="flex items-center bg-gray-100 rounded-full p-1">
+                    <a href="programs.html" class="px-3 py-1 text-sm font-medium bg-brand-primary text-white rounded-full">
+                        EN
+                    </a>
+                    <a href="programs-ar.html" class="px-3 py-1 text-sm font-medium text-gray-600 hover:text-brand-primary transition-colors rounded-full">
+                        عربي
+                    </a>
+                </div>
+                
                 <a href="contact.html" class="bg-gradient-to-r from-brand-primary to-brand-accent text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300 transform">
                     Book Free Trial
                 </a>
@@ -89,6 +103,16 @@
                 <a href="competitions.html" class="block text-brand-secondary hover:text-brand-primary transition-colors font-medium py-2">Competitions</a>
                 <a href="enrollment.html" class="block text-brand-secondary hover:text-brand-primary transition-colors font-medium py-2">Enrollment</a>
                 <a href="contact.html" class="block text-brand-secondary hover:text-brand-primary transition-colors font-medium py-2">Contact</a>
+                
+                <!-- Mobile Language Switcher -->
+                <div class="flex items-center justify-center space-x-2 pt-4 border-t border-gray-200">
+                    <a href="programs.html" class="px-4 py-2 text-sm font-medium bg-brand-primary text-white rounded-full">
+                        English
+                    </a>
+                    <a href="programs-ar.html" class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-brand-primary transition-colors border border-gray-300 rounded-full">
+                        عربي
+                    </a>
+                </div>
             </div>
         </div>
     </header>
@@ -111,7 +135,7 @@
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="bg-brand-bg rounded-xl p-8 shadow-lg" data-aos="fade-up">
                     <div class="w-16 h-16 bg-brand-primary rounded-full mb-6 flex items-center justify-center">
-                        <span class="text-2xl">🥋</span>
+                        <span class="material-icons text-2xl text-white">school</span>
                     </div>
                     <h3 class="text-2xl font-semibold mb-4">Preparation</h3>
                     <p class="text-brand-muted mb-4">Foundations: stance, balance, coordination, fun drills. Ideal for beginners.</p>
@@ -119,7 +143,7 @@
                 </div>
                 <div class="bg-brand-bg rounded-xl p-8 shadow-lg" data-aos="fade-up" data-aos-delay="100">
                     <div class="w-16 h-16 bg-brand-primary rounded-full mb-6 flex items-center justify-center">
-                        <span class="text-2xl">💪</span>
+                        <span class="material-icons text-2xl text-white">fitness_center</span>
                     </div>
                     <h3 class="text-2xl font-semibold mb-4">Development</h3>
                     <p class="text-brand-muted mb-4">Skills, combinations, conditioning, discipline. Builds confidence and focus.</p>
@@ -127,7 +151,7 @@
                 </div>
                 <div class="bg-brand-bg rounded-xl p-8 shadow-lg" data-aos="fade-up" data-aos-delay="200">
                     <div class="w-16 h-16 bg-brand-primary rounded-full mb-6 flex items-center justify-center">
-                        <span class="text-2xl">🥊</span>
+                        <span class="material-icons text-2xl text-white">emoji_events</span>
                     </div>
                     <h3 class="text-2xl font-semibold mb-4">Competition Team</h3>
                     <p class="text-brand-muted mb-4">Advanced tactics, ring craft, sparring under supervision; invite/coach approval.</p>
@@ -144,31 +168,96 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div class="text-center p-6 rounded-xl bg-white" data-aos="fade-up">
                     <div class="w-16 h-16 bg-brand-primary rounded-full mx-auto mb-4 flex items-center justify-center">
-                        <span class="text-2xl">🛡️</span>
+                        <span class="material-icons text-2xl text-white">security</span>
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Safety First</h3>
                     <p class="text-brand-muted text-sm">Certified instructors, proper equipment, and supervised training ensure your child's safety.</p>
                 </div>
                 <div class="text-center p-6 rounded-xl bg-white" data-aos="fade-up" data-aos-delay="100">
                     <div class="w-16 h-16 bg-brand-primary rounded-full mx-auto mb-4 flex items-center justify-center">
-                        <span class="text-2xl">🏆</span>
+                        <span class="material-icons text-2xl text-white">emoji_events</span>
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Proven Results</h3>
                     <p class="text-brand-muted text-sm">17 UAE National Champions, 4 World Cup Winners, and 6 in the World's Top Ten.</p>
                 </div>
                 <div class="text-center p-6 rounded-xl bg-white" data-aos="fade-up" data-aos-delay="200">
                     <div class="w-16 h-16 bg-brand-primary rounded-full mx-auto mb-4 flex items-center justify-center">
-                        <span class="text-2xl">👥</span>
+                        <span class="material-icons text-2xl text-white">groups</span>
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Expert Coaches</h3>
                     <p class="text-brand-muted text-sm">Professional instructors with years of experience in martial arts and youth development.</p>
                 </div>
                 <div class="text-center p-6 rounded-xl bg-white" data-aos="fade-up" data-aos-delay="300">
                     <div class="w-16 h-16 bg-brand-primary rounded-full mx-auto mb-4 flex items-center justify-center">
-                        <span class="text-2xl">💯</span>
+                        <span class="material-icons text-2xl text-white">self_improvement</span>
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Personal Growth</h3>
                     <p class="text-brand-muted text-sm">Builds confidence, discipline, respect, and physical fitness in a supportive environment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- See RAMA in Action Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center justify-center w-16 h-16 bg-brand-primary bg-opacity-10 rounded-full mb-6" data-aos="zoom-in">
+                    <span class="material-icons text-3xl text-brand-primary">visibility</span>
+                </div>
+                <h2 class="text-4xl font-montserrat font-bold mb-4" data-aos="fade-up">See RAMA in Action</h2>
+                <p class="text-xl text-brand-muted max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                    Watch our students train, compete, and grow in confidence at Royal Arsenal Martial Arts Academy
+                </p>
+            </div>
+            
+            <!-- Image Carousel -->
+            <div class="max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="300">
+                <div class="relative">
+                    <!-- Carousel Container -->
+                    <div id="rama-carousel" class="relative overflow-hidden rounded-2xl shadow-2xl">
+                        <!-- Slide 1 -->
+                        <div class="carousel-slide active">
+                            <img src="assets/gallery/PHOTO-2025-09-20-13-30-32.jpg" alt="RAMA Training Session 1" class="w-full h-64 md:h-96 object-cover">
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4 md:p-6">
+                                <h3 class="text-white text-lg md:text-xl font-semibold mb-1 md:mb-2">Training Excellence</h3>
+                                <p class="text-white/90 text-xs md:text-sm">Our students develop discipline, technique, and confidence through structured training</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 2 -->
+                        <div class="carousel-slide">
+                            <img src="assets/gallery/PHOTO-2025-09-20-13-30-54.jpg" alt="RAMA Training Session 2" class="w-full h-64 md:h-96 object-cover">
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4 md:p-6">
+                                <h3 class="text-white text-lg md:text-xl font-semibold mb-1 md:mb-2">Competition Success</h3>
+                                <p class="text-white/90 text-xs md:text-sm">See our champions in action at national and international tournaments</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 3 -->
+                        <div class="carousel-slide">
+                            <img src="assets/gallery/PHOTO-2025-08-26-11-32-44.jpg" alt="RAMA Community" class="w-full h-64 md:h-96 object-cover">
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4 md:p-6">
+                                <h3 class="text-white text-lg md:text-xl font-semibold mb-1 md:mb-2">RAMA Family</h3>
+                                <p class="text-white/90 text-xs md:text-sm">Join a supportive community where everyone grows together</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Navigation Arrows -->
+                    <button id="prevBtn" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/20 backdrop-blur-sm text-white p-3 rounded-full hover:bg-white/30 transition-all duration-300">
+                        <span class="material-icons">chevron_left</span>
+                    </button>
+                    <button id="nextBtn" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/20 backdrop-blur-sm text-white p-3 rounded-full hover:bg-white/30 transition-all duration-300">
+                        <span class="material-icons">chevron_right</span>
+                    </button>
+                    
+                    <!-- Dots Indicator -->
+                    <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                        <button class="carousel-dot active w-3 h-3 rounded-full bg-white/80" data-slide="0"></button>
+                        <button class="carousel-dot w-3 h-3 rounded-full bg-white/40" data-slide="1"></button>
+                        <button class="carousel-dot w-3 h-3 rounded-full bg-white/40" data-slide="2"></button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -223,7 +312,7 @@
                 <!-- Contact Info -->
                 <div class="text-center md:text-right text-sm">
                     <div class="flex items-center justify-center md:justify-end space-x-4">
-                        <a href="tel:+971501156988" class="text-brand-muted hover:text-brand-primary transition-colors">📞 Call</a>
+                        <a href="tel:+971501156988" class="text-brand-muted hover:text-brand-primary transition-colors"><span class="material-icons mr-1 text-sm">phone</span>Call</a>
                         <a href="mailto:contact@royalarsenal.club" target="_blank" class="text-brand-muted hover:text-brand-primary transition-colors">contact@royalarsenal.club</a>
                     </div>
                     

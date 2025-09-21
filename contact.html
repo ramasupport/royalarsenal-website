@@ -13,6 +13,9 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
     <!-- Custom Styles -->
     <link rel="stylesheet" href="css/styles.css">
     
@@ -25,7 +28,8 @@
         <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
             <div class="flex items-center">
                 <a href="index.html">
-                    <img src="assets/logo/logo.jpg" alt="RAMA Logo" class="h-14 w-auto rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <img src="assets/logo/logo.jpg" alt="RAMA Logo" class="logo-light h-14 w-auto rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <img src="assets/logo/logo-dark.jpg" alt="RAMA Logo" class="logo-dark h-14 w-auto rounded-lg shadow-md hover:shadow-lg transition-shadow">
                 </a>
             </div>
             
@@ -65,7 +69,17 @@
             </div>
             
             <div class="flex items-center space-x-4">
-                <a href="https://wa.me/971501156988?text=Hi%20RAMA%20team!%20I\'d%20like%20to%20book%20a%20free%20trial." target="_blank" class="bg-gradient-to-r from-brand-primary to-brand-accent text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300 transform">
+                <!-- Language Switcher -->
+                <div class="flex items-center bg-gray-100 rounded-full p-1">
+                    <a href="contact.html" class="px-3 py-1 text-sm font-medium bg-brand-primary text-white rounded-full">
+                        EN
+                    </a>
+                    <a href="contact-ar.html" class="px-3 py-1 text-sm font-medium text-gray-600 hover:text-brand-primary transition-colors rounded-full">
+                        عربي
+                    </a>
+                </div>
+                
+                <a href="https://wa.me/971501156988?text=Hi%20RAMA%20team!%20I\'d%20like%20to%20book%20a%20free%20trial." target="_blank" class="btn-enhanced bg-gradient-to-r from-brand-primary to-brand-accent text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300 transform">
                     Book Free Trial
                 </a>
                 
@@ -89,6 +103,16 @@
                 <a href="competitions.html" class="block text-brand-secondary hover:text-brand-primary transition-colors font-medium py-2">Competitions</a>
                 <a href="enrollment.html" class="block text-brand-secondary hover:text-brand-primary transition-colors font-medium py-2">Enrollment</a>
                 <a href="contact.html" class="block text-brand-primary font-medium py-2">Contact</a>
+                
+                <!-- Mobile Language Switcher -->
+                <div class="flex items-center justify-center space-x-2 pt-4 border-t border-gray-200">
+                    <a href="contact.html" class="px-4 py-2 text-sm font-medium bg-brand-primary text-white rounded-full">
+                        English
+                    </a>
+                    <a href="contact-ar.html" class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-brand-primary transition-colors border border-gray-300 rounded-full">
+                        عربي
+                    </a>
+                </div>
             </div>
         </div>
     </header>
@@ -180,9 +204,17 @@
                     </div>
                     
                     <button type="submit" 
-                            class="w-full bg-brand-primary text-white py-4 rounded-lg font-semibold text-lg hover:bg-brand-accent transition-colors">
-                        Book My Free Trial
+                            class="btn-enhanced w-full bg-brand-primary text-white py-4 rounded-lg font-semibold text-lg hover:bg-brand-accent transition-all duration-300 hover:shadow-xl hover:scale-105 transform">
+                        <span class="material-icons mr-2">sports_martial_arts</span>Book My Free Trial
                     </button>
+                    
+                    <!-- Form progress indicator -->
+                    <div class="mt-4 text-center text-sm text-brand-muted">
+                        <div class="flex items-center justify-center space-x-2">
+                            <span class="w-2 h-2 bg-brand-primary rounded-full"></span>
+                            <span>We typically respond within 2 hours</span>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
@@ -202,18 +234,18 @@
                         <div class="space-y-6">
                             <div class="flex items-start">
                                 <div class="w-12 h-12 bg-brand-primary rounded-full mr-4 flex items-center justify-center flex-shrink-0">
-                                    <span class="text-white text-xl">📍</span>
+                                    <span class="material-icons text-white text-xl">location_on</span>
                                 </div>
                                 <div>
                                     <h4 class="font-semibold text-brand-secondary mb-2">Address</h4>
-                                    <a href="https://maps.google.com/?q=Al+Quoz+1,+Dubai,+United+Arab+Emirates" 
+                                    <a href="https://www.google.com/maps/place/Royal+Arsenal+Martial+Arts+Academy/@25.1437997,55.2193028,17z/data=!3m1!4b1!4m6!3m5!1s0x3e5f6b005885a07d:0x32515a91f3ead6d3!8m2!3d25.1437949!4d55.2218777!16s%2Fg%2F11yf7rdbh9?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D" 
                                        target="_blank" 
                                        class="text-brand-muted hover:text-brand-primary transition-colors cursor-pointer block p-2 rounded-lg hover:bg-brand-bg">
                                         <div class="flex items-center">
                                             <div>
                                                 Al Quoz 1, Dubai<br>United Arab Emirates
                                             </div>
-                                            <span class="text-brand-primary ml-3 text-lg">🗺️</span>
+                                            <span class="material-icons text-brand-primary ml-3 text-lg">map</span>
                                         </div>
                                         <span class="text-xs text-brand-primary mt-1 block">Click to open in Google Maps</span>
                                     </a>
@@ -222,7 +254,7 @@
                             
                             <div class="flex items-start">
                                 <div class="w-12 h-12 bg-brand-primary rounded-full mr-4 flex items-center justify-center flex-shrink-0">
-                                    <span class="text-white text-xl">🕒</span>
+                                    <span class="material-icons text-white text-xl">schedule</span>
                                 </div>
                                 <div class="w-full">
                                     <h4 class="font-semibold text-brand-secondary mb-4">Opening Hours</h4>
@@ -245,7 +277,7 @@
                             
                             <div class="flex items-start">
                                 <div class="w-12 h-12 bg-brand-primary rounded-full mr-4 flex items-center justify-center flex-shrink-0">
-                                    <span class="text-white text-xl">📞</span>
+                                    <span class="material-icons text-white text-xl">phone</span>
                                 </div>
                                 <div>
                                     <h4 class="font-semibold text-brand-secondary mb-2">Contact</h4>
@@ -272,23 +304,55 @@
                 
                 <!-- Google Map -->
                 <div data-aos="fade-left">
-                    <div class="bg-white rounded-xl p-4 shadow-lg relative group cursor-pointer" 
-                         onclick="window.open('https://maps.google.com/?q=Al+Quoz+1,+Dubai,+United+Arab+Emirates', '_blank')">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3612.2736!2d55.2!3d25.1!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDA2JzAwLjAiTiA1NcKwMTInMDAuMCJF!5e0!3m2!1sen!2sae!4v1234567890"
-                            width="100%" 
-                            height="400" 
-                            style="border:0; border-radius: 8px; pointer-events: none;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade"
-                            title="Royal Arsenal Martial Arts Location">
-                        </iframe>
+                    <div class="map-container bg-white rounded-xl p-4 shadow-lg relative group cursor-pointer" 
+                         onclick="window.open('https://www.google.com/maps/place/Royal+Arsenal+Martial+Arts+Academy/@25.1437997,55.2193028,17z/data=!3m1!4b1!4m6!3m5!1s0x3e5f6b005885a07d:0x32515a91f3ead6d3!8m2!3d25.1437949!4d55.2218777!16s%2Fg%2F11yf7rdbh9?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D', '_blank')">
+                        <!-- Google Maps Embed -->
+                        <div class="map-iframe-container" style="width: 100%; height: 400px; border-radius: 8px; overflow: hidden; background: #f5f5f5;">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14440.573!2d55.2218777!3d25.1437949!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6b005885a07d%3A0x32515a91f3ead6d3!2sRoyal%20Arsenal%20Martial%20Arts%20Academy!5e0!3m2!1sen!2s!4v1640995200000!5m2!1sen!2s"
+                                width="100%" 
+                                height="100%" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="Royal Arsenal Martial Arts Academy Location">
+                            </iframe>
+                        </div>
+                        
+                        <!-- Debug script for map loading -->
+                        <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                            const iframe = document.querySelector('.map-iframe-container iframe');
+                            if (iframe) {
+                                iframe.addEventListener('load', function() {
+                                    console.log('Google Maps iframe loaded successfully');
+                                });
+                                
+                                iframe.addEventListener('error', function(e) {
+                                    console.error('Google Maps iframe failed to load:', e);
+                                });
+                                
+                                // Check if iframe content is accessible after a delay
+                                setTimeout(() => {
+                                    try {
+                                        if (iframe.contentDocument || iframe.contentWindow) {
+                                            console.log('Google Maps iframe content is accessible');
+                                        } else {
+                                            console.warn('Google Maps iframe content is not accessible - may be blocked');
+                                        }
+                                    } catch (e) {
+                                        console.warn('Google Maps iframe access blocked by CORS:', e.message);
+                                    }
+                                }, 2000);
+                            }
+                        });
+                        </script>
                         
                         <!-- Click overlay -->
                         <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center">
                             <div class="bg-brand-primary text-white px-4 py-2 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-90 group-hover:scale-100">
-                                <span class="text-sm font-semibold">🗺️ Open in Google Maps</span>
+                                <span class="text-sm font-semibold"><span class="material-icons mr-1 text-sm">map</span>Open in Google Maps</span>
                             </div>
                         </div>
                     </div>
@@ -297,45 +361,58 @@
         </div>
     </section>
 
-    <!-- WhatsApp Contact Section -->
-    <section class="py-20 bg-green-500">
+
+    <!-- Quick Contact QR Section -->
+    <section class="py-20 bg-gradient-to-br from-green-500 to-green-600">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
-                <h2 class="text-4xl font-montserrat font-bold text-white mb-4" data-aos="fade-up">Quick Contact</h2>
-                <p class="text-xl text-green-100" data-aos="fade-up" data-aos-delay="200">
+                <h2 class="text-4xl font-montserrat font-bold text-white mb-4" data-aos="fade-up">
+                    Quick Contact
+                </h2>
+                <p class="text-xl text-white/90 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
                     Scan QR code or click to chat instantly
                 </p>
             </div>
             
-            <div class="grid md:grid-cols-2 gap-12 items-center max-w-4xl mx-auto">
-                <!-- QR Code -->
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto items-center">
+                <!-- QR Code Section -->
                 <div class="text-center" data-aos="fade-right">
-                    <div class="bg-white rounded-2xl p-8 shadow-lg inline-block">
-                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">📱 Scan to Chat</h3>
-                        <div class="w-48 h-48 mx-auto bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg flex items-center justify-center mb-4">
-                            <div class="text-center">
-                                <div class="text-4xl mb-2">📱</div>
-                                <div class="text-sm text-gray-500">WhatsApp QR Code</div>
-                                <div class="text-xs text-gray-400 mt-1">+971 50 115 6988</div>
-                            </div>
+                    <div class="bg-white rounded-2xl p-6 shadow-2xl max-w-sm mx-auto">
+                        <!-- QR Code Image -->
+                        <div class="bg-gray-50 rounded-xl p-4 mb-4">
+                            <img src="assets/gallery/QR.jpg" 
+                                 alt="WhatsApp QR Code" 
+                                 class="w-32 h-32 mx-auto rounded-lg object-cover">
+                        </div>
+                        
+                        <div class="text-sm text-gray-600">
+                            <p class="flex items-center justify-center mb-2">
+                                <span class="material-icons mr-2 text-lg">camera_alt</span>
+                                WhatsApp QR Code
+                            </p>
+                            <p class="text-gray-500">+971 50 115 6988</p>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Call Button -->
+                <!-- Call Buttons Section -->
                 <div class="text-center" data-aos="fade-left">
-                    <h3 class="text-3xl font-bold text-white mb-6">📞 Or Call Us</h3>
-                    <a href="tel:+971501156988" 
-                       class="bg-white text-green-500 px-8 py-4 rounded-full font-semibold text-lg hover:shadow-lg hover:scale-105 transition-all duration-300 transform inline-flex items-center mb-6">
-                        <span class="text-2xl mr-3">📞</span>
-                        +971 50 115 6988
-                    </a>
+                    <div class="flex items-center justify-center mb-6">
+                        <span class="material-icons text-4xl text-white mr-3">phone</span>
+                        <h3 class="text-3xl font-bold text-white">Or Call Us</h3>
+                    </div>
                     
-                    <div class="mb-6">
-                        <a href="https://wa.me/971501156988?text=Hi%20RAMA%20team!%20I\'d%20like%20to%20book%20a%20free%20trial." 
+                    <div class="space-y-4">
+                        <a href="tel:+971501156988" 
+                           class="bg-white text-green-600 px-8 py-4 rounded-full font-semibold text-lg hover:shadow-lg hover:scale-105 transition-all duration-300 transform inline-flex items-center w-full max-w-xs mx-auto justify-center">
+                            <span class="material-icons text-2xl mr-3">phone</span>
+                            +971 50 115 6988
+                        </a>
+                        
+                        <a href="https://wa.me/971501156988?text=Hi%20RAMA%20team!%20I'd%20like%20to%20book%20a%20free%20trial." 
                            target="_blank"
-                           class="bg-white text-green-500 px-8 py-4 rounded-full font-semibold text-lg hover:shadow-lg hover:scale-105 transition-all duration-300 transform inline-flex items-center">
-                            <span class="text-2xl mr-3">💬</span>
+                           class="bg-white text-green-600 px-8 py-4 rounded-full font-semibold text-lg hover:shadow-lg hover:scale-105 transition-all duration-300 transform inline-flex items-center w-full max-w-xs mx-auto justify-center">
+                            <span class="material-icons text-2xl mr-3">chat</span>
                             WhatsApp Chat
                         </a>
                     </div>
@@ -373,7 +450,7 @@
                 <!-- Contact Info -->
                 <div class="text-center md:text-right text-sm">
                     <div class="flex items-center justify-center md:justify-end space-x-4">
-                        <a href="tel:+971501156988" class="text-brand-muted hover:text-brand-primary transition-colors">📞 Call</a>
+                        <a href="tel:+971501156988" class="text-brand-muted hover:text-brand-primary transition-colors"><span class="material-icons mr-1 text-sm">phone</span>Call</a>
                         <a href="mailto:contact@royalarsenal.club" target="_blank" class="text-brand-muted hover:text-brand-primary transition-colors">contact@royalarsenal.club</a>
                     </div>
                     

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التسجيل - الأكاديمية الملكية للفنون القتالية</title>
+    <meta name="description" content="سجل طفلك في الأكاديمية الملكية للفنون القتالية. تحميل النماذج المطلوبة وقواعد السلوك للانضمام إلى عائلة راما.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- Noto Sans Arabic for Arabic text -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/logo/positive.svg">
+</head>
+<body class="font-arabic bg-brand-bg text-brand-secondary" dir="rtl">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-xl border-b border-brand-primary/20">
+        <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center">
+                <a href="index-ar.html">
+                    <img src="assets/logo/logo.jpg" alt="شعار راما" class="logo-light h-14 w-auto rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <img src="assets/logo/logo-dark.jpg" alt="شعار راما" class="logo-dark h-14 w-auto rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                </a>
+            </div>
+            
+            <div class="hidden lg:flex space-x-8 space-x-reverse">
+                <a href="index-ar.html" class="text-brand-secondary hover:text-brand-primary transition-colors font-medium relative group">
+                    الرئيسية
+                    <span class="absolute -bottom-1 right-0 w-0 h-0.5 bg-brand-primary transition-all group-hover:w-full"></span>
+                </a>
+                <a href="programs-ar.html" class="text-brand-secondary hover:text-brand-primary transition-colors font-medium relative group">
+                    البرامج
+                    <span class="absolute -bottom-1 right-0 w-0 h-0.5 bg-brand-primary transition-all group-hover:w-full"></span>
+                </a>
+                <a href="pricing-ar.html" class="text-brand-secondary hover:text-brand-primary transition-colors font-medium relative group">
+                    الأسعار
+                    <span class="absolute -bottom-1 right-0 w-0 h-0.5 bg-brand-primary transition-all group-hover:w-full"></span>
+                </a>
+                <a href="timetable-ar.html" class="text-brand-secondary hover:text-brand-primary transition-colors font-medium relative group">
+                    الجدول الزمني
+                    <span class="absolute -bottom-1 right-0 w-0 h-0.5 bg-brand-primary transition-all group-hover:w-full"></span>
+                </a>
+                <a href="coaches-ar.html" class="text-brand-secondary hover:text-brand-primary transition-colors font-medium relative group">
+                    المدربون
+                    <span class="absolute -bottom-1 right-0 w-0 h-0.5 bg-brand-primary transition-all group-hover:w-full"></span>
+                </a>
+                <a href="competitions-ar.html" class="text-brand-secondary hover:text-brand-primary transition-colors font-medium relative group">
+                    المسابقات
+                    <span class="absolute -bottom-1 right-0 w-0 h-0.5 bg-brand-primary transition-all group-hover:w-full"></span>
+                </a>
+                <a href="enrollment-ar.html" class="text-brand-primary font-medium relative group">
+                    التسجيل
+                    <span class="absolute -bottom-1 right-0 w-full h-0.5 bg-brand-primary"></span>
+                </a>
+                <a href="contact-ar.html" class="text-brand-secondary hover:text-brand-primary transition-colors font-medium relative group">
+                    اتصل بنا
+                    <span class="absolute -bottom-1 right-0 w-0 h-0.5 bg-brand-primary transition-all group-hover:w-full"></span>
+                </a>
+            </div>
+            
+            <div class="flex items-center space-x-4 space-x-reverse">
+                <!-- Language Switcher -->
+                <div class="flex items-center bg-gray-100 rounded-full p-1">
+                    <a href="enrollment.html" class="px-3 py-1 text-sm font-medium text-gray-600 hover:text-brand-primary transition-colors rounded-full">
+                        EN
+                    </a>
+                    <a href="enrollment-ar.html" class="px-3 py-1 text-sm font-medium bg-brand-primary text-white rounded-full">
+                        عربي
+                    </a>
+                </div>
+                
+                <a href="contact-ar.html" class="bg-gradient-to-r from-brand-primary to-brand-accent text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300 transform">
+                    احجز تجربة مجانية
+                </a>
+                
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-btn" class="lg:hidden p-2 text-brand-secondary hover:text-brand-primary transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="lg:hidden hidden bg-white border-t border-brand-primary/20 shadow-lg">
+            <div class="container mx-auto px-4 py-4 space-y-4">
+                <a href="index-ar.html" class="block text-brand-secondary hover:text-brand-primary transition-colors font-medium py-2">الرئيسية</a>
+                <a href="programs-ar.html" class="block text-brand-secondary hover:text-brand-primary transition-colors font-medium py-2">البرامج</a>
+                <a href="pricing-ar.html" class="block text-brand-secondary hover:text-brand-primary transition-colors font-medium py-2">الأسعار</a>
+                <a href="timetable-ar.html" class="block text-brand-secondary hover:text-brand-primary transition-colors font-medium py-2">الجدول الزمني</a>
+                <a href="coaches-ar.html" class="block text-brand-secondary hover:text-brand-primary transition-colors font-medium py-2">المدربون</a>
+                <a href="competitions-ar.html" class="block text-brand-secondary hover:text-brand-primary transition-colors font-medium py-2">المسابقات</a>
+                <a href="enrollment-ar.html" class="block text-brand-primary font-medium py-2">التسجيل</a>
+                <a href="contact-ar.html" class="block text-brand-secondary hover:text-brand-primary transition-colors font-medium py-2">اتصل بنا</a>
+                
+                <!-- Mobile Language Switcher -->
+                <div class="flex items-center justify-center space-x-2 space-x-reverse pt-4 border-t border-gray-200">
+                    <a href="enrollment.html" class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-brand-primary transition-colors border border-gray-300 rounded-full">
+                        English
+                    </a>
+                    <a href="enrollment-ar.html" class="px-4 py-2 text-sm font-medium bg-brand-primary text-white rounded-full">
+                        عربي
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-brand-bg to-brand-surface py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-5xl md:text-6xl font-montserrat font-bold text-brand-secondary mb-6" data-aos="fade-up">
+                التسجيل
+            </h1>
+            <p class="text-xl text-brand-muted mb-8 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                ابدأ رحلة طفلك في الفنون القتالية معنا. حمل النماذج المطلوبة وتعرف على قواعد الأكاديمية.
+            </p>
+        </div>
+    </section>
+
+    <!-- Enrollment Documents Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-montserrat font-bold mb-4" data-aos="fade-up">المستندات المطلوبة</h2>
+                <p class="text-xl text-brand-muted max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                    حمل النماذج التالية واملأها قبل الحضور للتسجيل
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Enrollment Form -->
+                <div class="bg-white rounded-xl p-8 shadow-lg border border-brand-primary/20" data-aos="fade-up">
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-brand-primary rounded-full mx-auto mb-6 flex items-center justify-center">
+                            <span class="material-icons text-2xl text-white">description</span>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-brand-secondary mb-4">نموذج التسجيل والإعفاء</h3>
+                        <p class="text-brand-muted mb-6">
+                            نموذج التسجيل الرسمي مع إعفاء من المسؤولية. يجب ملؤه من قبل ولي الأمر.
+                        </p>
+                        <a href="assets/docs/Royal Arsenal Enrollment and waiver.pdf" 
+                           target="_blank" 
+                           class="inline-flex items-center bg-brand-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-brand-accent transition-colors">
+                            <span class="material-icons ml-2">download</span>
+                            تحميل النموذج
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Code of Conduct -->
+                <div class="bg-white rounded-xl p-8 shadow-lg border border-brand-primary/20" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-brand-primary rounded-full mx-auto mb-6 flex items-center justify-center">
+                            <span class="material-icons text-2xl text-white">rule</span>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-brand-secondary mb-4">قواعد السلوك التجاري</h3>
+                        <p class="text-brand-muted mb-6">
+                            قواعد وسياسات الأكاديمية التي يجب على جميع الطلاب وأولياء الأمور الالتزام بها.
+                        </p>
+                        <a href="assets/docs/Royal Arsenal- code of business conduct[.pdf" 
+                           target="_blank" 
+                           class="inline-flex items-center bg-brand-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-brand-accent transition-colors">
+                            <span class="material-icons ml-2">download</span>
+                            تحميل القواعد
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enrollment Process Section -->
+    <section class="py-20 bg-brand-bg">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-montserrat font-bold mb-4" data-aos="fade-up">خطوات التسجيل</h2>
+                <p class="text-xl text-brand-muted max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                    اتبع هذه الخطوات البسيطة للانضمام إلى عائلة راما
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div class="text-center" data-aos="fade-up">
+                    <div class="w-16 h-16 bg-brand-primary rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <span class="text-2xl font-bold text-white">1</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">احجز تجربة مجانية</h3>
+                    <p class="text-brand-muted">ابدأ بجلسة تجريبية مجانية لطفلك لتجربة برامجنا</p>
+                </div>
+                
+                <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-brand-primary rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <span class="text-2xl font-bold text-white">2</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">املأ النماذج</h3>
+                    <p class="text-brand-muted">حمل واملأ نموذج التسجيل وقواعد السلوك</p>
+                </div>
+                
+                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-brand-primary rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <span class="text-2xl font-bold text-white">3</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">ابدأ التدريب</h3>
+                    <p class="text-brand-muted">انضم إلى الحصص واستمتع برحلة الفنون القتالية</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section class="py-20 bg-brand-primary">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-montserrat font-bold text-white mb-6" data-aos="fade-up">
+                مستعد للبدء؟
+            </h2>
+            <p class="text-xl text-brand-bg mb-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                تواصل معنا اليوم لحجز تجربة مجانية والحصول على مساعدة في عملية التسجيل
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 sm:space-x-reverse" data-aos="fade-up" data-aos-delay="400">
+                <a href="contact-ar.html" class="bg-white text-brand-primary px-8 py-4 rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300 transform">
+                    احجز تجربة مجانية
+                </a>
+                <a href="https://wa.me/971501156988?text=مرحباً! أود الحصول على مساعدة في التسجيل." 
+                   target="_blank"
+                   class="bg-transparent text-white px-8 py-4 rounded-full font-semibold border-2 border-white hover:bg-white hover:text-brand-primary transition-all duration-300">
+                    راسلنا على واتساب
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-secondary text-white py-6">
+        <div class="container mx-auto px-4">
+            <!-- Main Footer Content -->
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 mb-4">
+                <!-- Brand Section -->
+                <div class="flex items-center space-x-4 space-x-reverse">
+                    <img src="assets/logo/logo-dark.jpg" alt="شعار راما" class="h-10 w-auto rounded-lg shadow-md">
+                    <div>
+                        <p class="text-white text-sm font-semibold">الأكاديمية الملكية للفنون القتالية</p>
+                        <p class="text-xs text-brand-muted">مرخصة: 1523793</p>
+                    </div>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 md:space-x-reverse text-sm">
+                    <a href="tel:+971501156988" class="text-gray-300 hover:text-brand-primary transition-colors">
+                        <span class="material-icons ml-1 text-sm">phone</span>اتصل
+                    </a>
+                    <a href="mailto:contact@royalarsenal.club" class="text-gray-300 hover:text-brand-primary transition-colors">
+                        <span class="material-icons ml-1 text-sm">email</span>راسلنا
+                    </a>
+                    <a href="https://wa.me/971501156988" target="_blank" class="text-gray-300 hover:text-brand-primary transition-colors">
+                        <span class="material-icons ml-1 text-sm">chat</span>واتساب
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="border-t border-gray-700 pt-4 text-center text-sm text-gray-400">
+                <p>الأكاديمية الملكية للفنون القتالية. جميع الحقوق محفوظة &copy; 2025.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 100
+        });
+
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

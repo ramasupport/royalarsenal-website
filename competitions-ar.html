@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المسابقات والبطولات - الأكاديمية الملكية للفنون القتالية</title>
+    <meta name="description" content="رياضيو راما يتنافسون في بطولات الكيك بوكسينغ الدولية. 17 بطل إماراتي، 4 فائزين بكأس العالم، 6 رياضيين ضمن أفضل 10 عالمياً.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- Noto Sans Arabic for Arabic text -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/logo/positive.svg">
+</head>
+<body class="font-arabic bg-brand-bg text-brand-secondary" dir="rtl">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-xl border-b border-brand-primary/20">
+        <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center">
+                <a href="index-ar.html">
+                    <img src="assets/logo/logo.jpg" alt="شعار راما" class="logo-light h-14 w-auto rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <img src="assets/logo/logo-dark.jpg" alt="شعار راما" class="logo-dark h-14 w-auto rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                </a>
+            </div>
+            
+            <div class="hidden lg:flex space-x-8 space-x-reverse">
+                <a href="index-ar.html" class="text-brand-secondary hover:text-brand-primary transition-colors font-medium relative group">
+                    الرئيسية
+                    <span class="absolute -bottom-1 right-0 w-0 h-0.5 bg-brand-primary transition-all group-hover:w-full"></span>
+                </a>
+                <a href="programs-ar.html" class="text-brand-secondary hover:text-brand-primary transition-colors font-medium relative group">
+                    البرامج
+                    <span class="absolute -bottom-1 right-0 w-0 h-0.5 bg-brand-primary transition-all group-hover:w-full"></span>
+                </a>
+                <a href="pricing-ar.html" class="text-brand-secondary hover:text-brand-primary transition-colors font-medium relative group">
+                    الأسعار
+                    <span class="absolute -bottom-1 right-0 w-0 h-0.5 bg-brand-primary transition-all group-hover:w-full"></span>
+                </a>
+                <a href="timetable-ar.html" class="text-brand-secondary hover:text-brand-primary transition-colors font-medium relative group">
+                    الجدول الزمني
+                    <span class="absolute -bottom-1 right-0 w-0 h-0.5 bg-brand-primary transition-all group-hover:w-full"></span>
+                </a>
+                <a href="coaches-ar.html" class="text-brand-secondary hover:text-brand-primary transition-colors font-medium relative group">
+                    المدربون
+                    <span class="absolute -bottom-1 right-0 w-0 h-0.5 bg-brand-primary transition-all group-hover:w-full"></span>
+                </a>
+                <a href="competitions-ar.html" class="text-brand-primary font-medium relative group">
+                    المسابقات
+                    <span class="absolute -bottom-1 right-0 w-full h-0.5 bg-brand-primary"></span>
+                </a>
+                <a href="enrollment-ar.html" class="text-brand-secondary hover:text-brand-primary transition-colors font-medium relative group">
+                    التسجيل
+                    <span class="absolute -bottom-1 right-0 w-0 h-0.5 bg-brand-primary transition-all group-hover:w-full"></span>
+                </a>
+                <a href="contact-ar.html" class="text-brand-secondary hover:text-brand-primary transition-colors font-medium relative group">
+                    اتصل بنا
+                    <span class="absolute -bottom-1 right-0 w-0 h-0.5 bg-brand-primary transition-all group-hover:w-full"></span>
+                </a>
+            </div>
+            
+            <div class="flex items-center space-x-4 space-x-reverse">
+                <!-- Language Switcher -->
+                <div class="flex items-center bg-gray-100 rounded-full p-1">
+                    <a href="competitions.html" class="px-3 py-1 text-sm font-medium text-gray-600 hover:text-brand-primary transition-colors rounded-full">
+                        EN
+                    </a>
+                    <a href="competitions-ar.html" class="px-3 py-1 text-sm font-medium bg-brand-primary text-white rounded-full">
+                        عربي
+                    </a>
+                </div>
+                
+                <a href="contact-ar.html" class="bg-gradient-to-r from-brand-primary to-brand-accent text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300 transform">
+                    احجز تجربة مجانية
+                </a>
+                
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-btn" class="lg:hidden p-2 text-brand-secondary hover:text-brand-primary transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="lg:hidden hidden bg-white border-t border-brand-primary/20 shadow-lg">
+            <div class="container mx-auto px-4 py-4 space-y-4">
+                <a href="index-ar.html" class="block text-brand-secondary hover:text-brand-primary transition-colors font-medium py-2">الرئيسية</a>
+                <a href="programs-ar.html" class="block text-brand-secondary hover:text-brand-primary transition-colors font-medium py-2">البرامج</a>
+                <a href="pricing-ar.html" class="block text-brand-secondary hover:text-brand-primary transition-colors font-medium py-2">الأسعار</a>
+                <a href="timetable-ar.html" class="block text-brand-secondary hover:text-brand-primary transition-colors font-medium py-2">الجدول الزمني</a>
+                <a href="coaches-ar.html" class="block text-brand-secondary hover:text-brand-primary transition-colors font-medium py-2">المدربون</a>
+                <a href="competitions-ar.html" class="block text-brand-primary font-medium py-2">المسابقات</a>
+                <a href="enrollment-ar.html" class="block text-brand-secondary hover:text-brand-primary transition-colors font-medium py-2">التسجيل</a>
+                <a href="contact-ar.html" class="block text-brand-secondary hover:text-brand-primary transition-colors font-medium py-2">اتصل بنا</a>
+                
+                <!-- Mobile Language Switcher -->
+                <div class="flex items-center justify-center space-x-2 space-x-reverse pt-4 border-t border-gray-200">
+                    <a href="competitions.html" class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-brand-primary transition-colors border border-gray-300 rounded-full">
+                        English
+                    </a>
+                    <a href="competitions-ar.html" class="px-4 py-2 text-sm font-medium bg-brand-primary text-white rounded-full">
+                        عربي
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-brand-bg to-brand-surface py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-5xl md:text-6xl font-montserrat font-bold text-brand-secondary mb-6" data-aos="fade-up">
+                أبرز المسابقات
+            </h1>
+            <p class="text-xl text-brand-muted mb-8 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                نحتفل بإنجازات رياضيينا في مسابقات الفنون القتالية المحلية والدولية
+            </p>
+        </div>
+    </section>
+
+    <!-- Upcoming Events Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center justify-center w-16 h-16 bg-brand-primary bg-opacity-10 rounded-full mb-6" data-aos="zoom-in">
+                    <span class="material-icons text-3xl text-brand-primary">event</span>
+                </div>
+                <h2 class="text-4xl font-montserrat font-bold mb-4" data-aos="fade-up">الأحداث القادمة</h2>
+                <p class="text-xl text-brand-muted max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                    انضم إلينا في المسابقة الدولية الكبرى القادمة للكيك بوكسينغ
+                </p>
+            </div>
+            
+            <!-- Featured Upcoming Event -->
+            <div class="max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="300">
+                <div class="bg-gradient-to-br from-white to-brand-bg rounded-2xl p-8 shadow-xl border border-brand-primary/10">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <!-- Event Image -->
+                        <div class="relative">
+                            <img src="assets/gallery/6445bf_3c2675d86ce14e6e9f2bbf74f6bf4d45~mv2.avif" 
+                                 alt="كأس العالم للكيك بوكسينغ في أوزبكستان" 
+                                 class="w-full h-64 object-cover rounded-xl shadow-lg">
+                            <div class="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                                قادم
+                            </div>
+                        </div>
+                        
+                        <!-- Event Details -->
+                        <div class="text-right">
+                            <div class="flex items-center justify-end mb-4">
+                                <span class="text-sm text-brand-primary font-semibold">حدث WAKO الرسمي</span>
+                                <img src="https://flagcdn.com/w40/uz.png" alt="علم أوزبكستان" class="w-8 h-6 ml-3 rounded">
+                            </div>
+                            
+                            <h3 class="text-3xl font-montserrat font-bold text-brand-secondary mb-4">
+                                كأس العالم للكيك بوكسينغ في أوزبكستان
+                            </h3>
+                            
+                            <div class="space-y-3 mb-6">
+                                <div class="flex items-center text-brand-muted justify-end">
+                                    <span>طشقند، أوزبكستان</span>
+                                    <span class="material-icons text-brand-primary mr-3 no-flip">location_on</span>
+                                </div>
+                                <div class="flex items-center text-brand-muted justify-end">
+                                    <span class="number-content">07 أكتوبر 2025، 09:00 – 12 أكتوبر 2025، 17:30</span>
+                                    <span class="material-icons text-brand-primary mr-3 no-flip">calendar_today</span>
+                                </div>
+                                <div class="flex items-center text-brand-muted justify-end">
+                                    <span>مسابقة كأس العالم الدولية</span>
+                                    <span class="material-icons text-brand-primary mr-3 no-flip">emoji_events</span>
+                                </div>
+                            </div>
+                            
+                            <p class="text-brand-muted mb-6 text-right">
+                                سيتنافس رياضيو راما في هذه البطولة الدولية المرموقة المعتمدة من WAKO، 
+                                ممثلين دولة الإمارات على المسرح العالمي ضد أفضل لاعبي الكيك بوكسينغ من جميع أنحاء العالم.
+                            </p>
+                            
+                            <div class="flex justify-center">
+                                <a href="https://www.wako.sport/event-details/uzbekistan-kickboxing-world-cup" 
+                                   target="_blank"
+                                   class="inline-flex items-center bg-brand-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-brand-accent transition-all duration-300 hover:scale-105 transform">
+                                    <span class="material-icons mr-2 no-flip">open_in_new</span>
+                                    عرض تفاصيل الحدث الرسمية
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competition Legacy Section -->
+    <section class="py-20 bg-brand-bg">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-montserrat font-bold mb-4" data-aos="fade-up">إرث المسابقات</h2>
+                <p class="text-xl text-brand-muted max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                    نحتفل بإنجازات رياضيينا ونستعد للمسابقات المستقبلية مثل كأس العالم في أوزبكستان
+                </p>
+            </div>
+            
+            <!-- Achievement Statistics -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-4xl mx-auto">
+                <div class="text-center p-6 rounded-xl bg-white shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <span class="material-icons text-2xl text-yellow-600">emoji_events</span>
+                    </div>
+                    <div class="text-3xl font-bold text-brand-primary mb-2">17</div>
+                    <div class="text-sm text-brand-muted">بطل إماراتي</div>
+                </div>
+                
+                <div class="text-center p-6 rounded-xl bg-white shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-red-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <span class="material-icons text-2xl text-red-600">public</span>
+                    </div>
+                    <div class="text-3xl font-bold text-brand-primary mb-2">4</div>
+                    <div class="text-sm text-brand-muted">فائز بكأس العالم</div>
+                </div>
+                
+                <div class="text-center p-6 rounded-xl bg-white shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <span class="material-icons text-2xl text-purple-600">workspace_premium</span>
+                    </div>
+                    <div class="text-3xl font-bold text-brand-primary mb-2">6</div>
+                    <div class="text-sm text-brand-muted">ضمن أفضل 10 عالمياً</div>
+                </div>
+                
+                <div class="text-center p-6 rounded-xl bg-white shadow-lg" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-16 h-16 bg-green-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <span class="material-icons text-2xl text-green-600">military_tech</span>
+                    </div>
+                    <div class="text-3xl font-bold text-brand-primary mb-2">1</div>
+                    <div class="text-sm text-brand-muted">بطل القارات</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-secondary text-white py-6">
+        <div class="container mx-auto px-4">
+            <!-- Main Footer Content -->
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 mb-4">
+                <!-- Brand Section -->
+                <div class="flex items-center space-x-4 space-x-reverse">
+                    <img src="assets/logo/logo-dark.jpg" alt="شعار راما" class="h-10 w-auto rounded-lg shadow-md">
+                    <div>
+                        <p class="text-white text-sm font-semibold">الأكاديمية الملكية للفنون القتالية</p>
+                        <p class="text-xs text-brand-muted">مرخصة: 1523793</p>
+                    </div>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 md:space-x-reverse text-sm">
+                    <a href="tel:+971501156988" class="text-gray-300 hover:text-brand-primary transition-colors">
+                        <span class="material-icons mr-1 text-sm no-flip">phone</span>اتصل
+                    </a>
+                    <a href="mailto:contact@royalarsenal.club" class="text-gray-300 hover:text-brand-primary transition-colors">
+                        <span class="material-icons mr-1 text-sm no-flip">email</span>راسلنا
+                    </a>
+                    <a href="https://wa.me/971501156988" target="_blank" class="text-gray-300 hover:text-brand-primary transition-colors">
+                        <span class="material-icons mr-1 text-sm no-flip">chat</span>واتساب
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="border-t border-gray-700 pt-4 text-center text-sm text-gray-400">
+                <p>الأكاديمية الملكية للفنون القتالية. جميع الحقوق محفوظة &copy; 2025.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 100
+        });
+
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

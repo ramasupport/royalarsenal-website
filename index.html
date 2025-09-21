@@ -13,8 +13,79 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
     <!-- Custom Styles -->
     <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SportsActivityLocation",
+        "name": "Royal Arsenal Martial Arts Academy (RAMA)",
+        "alternateName": "RAMA Dubai",
+        "description": "Professional kickboxing and martial arts training for kids and teens in Dubai. 17 UAE National Champions, 4 World Cup Winners.",
+        "url": "https://royalarsenal.club",
+        "telephone": "+971501156988",
+        "email": "info@rama-uae.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Dubai",
+            "addressCountry": "UAE"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "25.2048",
+            "longitude": "55.2708"
+        },
+        "openingHours": [
+            "Mo 18:00-19:30",
+            "Tu 16:00-19:30", 
+            "We 17:00-19:30",
+            "Th 17:00-19:30",
+            "Fr 14:00-17:30",
+            "Sa 15:30-16:30"
+        ],
+        "sport": "Kickboxing",
+        "priceRange": "AED 400-800",
+        "image": "https://royalarsenal.club/assets/logo/logo.jpg",
+        "sameAs": [
+            "https://wa.me/971501156988"
+        ],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Kickboxing Programs",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Preparation Program",
+                        "description": "Foundation kickboxing program for beginners aged 4-16"
+                    }
+                },
+                {
+                    "@type": "Offer", 
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Development Program",
+                        "description": "Intermediate kickboxing training with technique focus"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service", 
+                        "name": "Competition Team",
+                        "description": "Elite training for competitive kickboxing athletes"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="assets/logo/positive.svg">
@@ -25,7 +96,8 @@
         <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
             <div class="flex items-center">
                 <a href="index.html">
-                    <img src="assets/logo/logo.jpg" alt="RAMA Logo" class="h-14 w-auto rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <img src="assets/logo/logo.jpg" alt="RAMA Logo" class="logo-light h-14 w-auto rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <img src="assets/logo/logo-dark.jpg" alt="RAMA Logo" class="logo-dark h-14 w-auto rounded-lg shadow-md hover:shadow-lg transition-shadow">
                 </a>
             </div>
             
@@ -65,6 +137,16 @@
             </div>
             
             <div class="flex items-center space-x-4">
+                <!-- Language Switcher -->
+                <div class="flex items-center bg-gray-100 rounded-full p-1">
+                    <a href="index.html" class="px-3 py-1 text-sm font-medium bg-brand-primary text-white rounded-full">
+                        EN
+                    </a>
+                    <a href="index-ar.html" class="px-3 py-1 text-sm font-medium text-gray-600 hover:text-brand-primary transition-colors rounded-full">
+                        عربي
+                    </a>
+                </div>
+                
                 <a href="contact.html" class="bg-gradient-to-r from-brand-primary to-brand-accent text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300 transform">
                     Book Free Trial
                 </a>
@@ -89,83 +171,142 @@
                 <a href="competitions.html" class="block text-brand-secondary hover:text-brand-primary transition-colors font-medium py-2">Competitions</a>
                 <a href="enrollment.html" class="block text-brand-secondary hover:text-brand-primary transition-colors font-medium py-2">Enrollment</a>
                 <a href="contact.html" class="block text-brand-secondary hover:text-brand-primary transition-colors font-medium py-2">Contact</a>
+                
+                <!-- Mobile Language Switcher -->
+                <div class="flex items-center justify-center space-x-2 pt-4 border-t border-gray-200">
+                    <a href="index.html" class="px-4 py-2 text-sm font-medium bg-brand-primary text-white rounded-full">
+                        English
+                    </a>
+                    <a href="index-ar.html" class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-brand-primary transition-colors border border-gray-300 rounded-full">
+                        عربي
+                    </a>
+                </div>
             </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="relative bg-gradient-to-br from-brand-bg to-brand-surface py-20">
-        <div class="container mx-auto px-4 text-center">
-            <h1 class="text-5xl md:text-6xl font-montserrat font-bold text-brand-secondary mb-6" data-aos="fade-up">
-                Kickboxing for Discipline,<br>Confidence & Fitness
+    <section class="relative bg-gradient-to-br from-brand-bg to-brand-surface py-20 overflow-hidden">
+        <!-- Background Video -->
+        <div class="absolute inset-0 z-0">
+            <video 
+                class="w-full h-full object-cover"
+                autoplay
+                muted
+                loop
+                playsinline
+                webkit-playsinline>
+                <source src="assets/gallery/Launch.mp4" type="video/mp4">
+            </video>
+            <!-- Video overlay for readability -->
+            <div class="absolute inset-0 bg-black/40"></div>
+        </div>
+        
+        <!-- Floating elements for visual interest -->
+        <div class="absolute top-10 left-10 w-20 h-20 bg-brand-primary opacity-20 rounded-full animate-float z-10"></div>
+        <div class="absolute bottom-20 right-20 w-16 h-16 bg-brand-accent opacity-20 rounded-full animate-float z-10" style="animation-delay: 1s;"></div>
+        <div class="absolute top-1/2 left-1/4 w-12 h-12 bg-brand-primary opacity-10 rounded-full animate-pulse-subtle z-10"></div>
+        
+        <div class="container mx-auto px-4 text-center relative z-20">
+            <div class="inline-flex items-center justify-center w-20 h-20 bg-brand-primary bg-opacity-30 rounded-full mb-6 animate-pulse-subtle backdrop-blur-sm" data-aos="zoom-in">
+                <span class="material-icons text-4xl text-white">sports_martial_arts</span>
+            </div>
+            <h1 class="text-5xl md:text-6xl font-montserrat font-bold text-white mb-6 leading-tight drop-shadow-lg" data-aos="fade-up">
+                Kickboxing for Discipline,<br><span class="text-brand-primary">Confidence</span> & Fitness
             </h1>
-            <p class="text-xl text-brand-muted mb-8" data-aos="fade-up" data-aos-delay="200">
-                Kids • Teens. Dubai-based. Certified coaches.
+            <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto drop-shadow-md" data-aos="fade-up" data-aos-delay="200">
+                Join the <strong>UAE's strongest kickboxing family</strong> • Kids & Teens • Dubai-based • Certified coaches
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center" data-aos="fade-up" data-aos-delay="400">
-                <a href="contact.html" class="bg-brand-primary text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-brand-accent transition-colors">
+                <a href="contact.html" class="btn-enhanced bg-brand-primary text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-brand-accent transition-all duration-300 hover:shadow-xl hover:scale-105 transform glow-on-scroll">
+                    <span class="material-icons mr-2">sports_martial_arts</span>
                     Book Free Trial
                 </a>
                 <a href="https://wa.me/971501156988?text=Hi%20RAMA%20team!%20I'd%20like%20to%20book%20a%20free%20trial." target="_blank"
-                   class="bg-white text-brand-primary px-8 py-4 rounded-full font-semibold text-lg border-2 border-brand-primary hover:bg-brand-primary hover:text-white transition-colors">
+                   class="btn-enhanced bg-white text-brand-primary px-8 py-4 rounded-full font-semibold text-lg border-2 border-brand-primary hover:bg-brand-primary hover:text-white transition-all duration-300 hover:shadow-xl hover:scale-105 transform">
+                    <span class="material-icons mr-2">chat</span>
                     WhatsApp Us
                 </a>
+            </div>
+            
+            <!-- Trust indicators -->
+            
+            <div class="mt-8 flex flex-wrap justify-center items-center gap-8 text-sm text-white/80" data-aos="fade-up" data-aos-delay="600">
+                <div class="flex items-center bg-white/10 backdrop-blur-sm px-3 py-2 rounded-full">
+                    <span class="material-icons text-green-400 mr-2 text-lg">verified</span>
+                    Licensed Academy
+                </div>
+                <div class="flex items-center bg-white/10 backdrop-blur-sm px-3 py-2 rounded-full">
+                    <span class="material-icons text-green-400 mr-2 text-lg">military_tech</span>
+                    WAKO Certified
+                </div>
+                <div class="flex items-center bg-white/10 backdrop-blur-sm px-3 py-2 rounded-full">
+                    <span class="material-icons text-yellow-400 mr-2 text-lg">star</span>
+                    Excellent Reviews
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Achievements Bar -->
-    <section class="bg-brand-secondary text-white py-12">
+    <section class="bg-brand-secondary text-white py-12" id="achievements-section">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                 <div data-aos="fade-up" class="flex flex-col items-center">
                     <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-3 shadow-lg">
-                        <span class="text-3xl">🏆</span>
+                        <span class="material-icons text-3xl text-brand-primary">emoji_events</span>
                     </div>
-                    <div class="text-3xl font-bold text-brand-primary">17</div>
+                    <div class="text-3xl font-bold text-brand-primary counter" data-target="17">0</div>
                     <div class="text-sm">UAE National Champions</div>
                 </div>
                 <div data-aos="fade-up" data-aos-delay="100" class="flex flex-col items-center">
                     <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-3 shadow-lg">
-                        <span class="text-3xl">⭐</span>
+                        <span class="material-icons text-3xl text-brand-primary">public</span>
                     </div>
-                    <div class="text-3xl font-bold text-brand-primary">4</div>
+                    <div class="text-3xl font-bold text-brand-primary counter" data-target="4">0</div>
                     <div class="text-sm">World Cup Winners</div>
                 </div>
                 <div data-aos="fade-up" data-aos-delay="200" class="flex flex-col items-center">
                     <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-3 shadow-lg">
-                        <span class="text-3xl">🥇</span>
+                        <span class="material-icons text-3xl text-brand-primary">workspace_premium</span>
                     </div>
-                    <div class="text-3xl font-bold text-brand-primary">6</div>
+                    <div class="text-3xl font-bold text-brand-primary counter" data-target="6">0</div>
                     <div class="text-sm">World's Top Ten</div>
                 </div>
                 <div data-aos="fade-up" data-aos-delay="300" class="flex flex-col items-center">
                     <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-3 shadow-lg">
-                        <span class="text-3xl">👑</span>
+                        <span class="material-icons text-3xl text-brand-primary">military_tech</span>
                     </div>
-                    <div class="text-3xl font-bold text-brand-primary">1</div>
+                    <div class="text-3xl font-bold text-brand-primary counter" data-target="1">0</div>
                     <div class="text-sm">Intercontinental Champion</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Google Reviews Section -->
+    <!-- Parent Testimonials Section -->
     <section class="py-20 bg-brand-bg">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
+                <div class="inline-flex items-center justify-center w-16 h-16 bg-yellow-100 rounded-full mb-6" data-aos="zoom-in">
+                    <span class="material-icons text-3xl text-yellow-600">star_rate</span>
+                </div>
                 <h2 class="text-4xl font-montserrat font-bold mb-4" data-aos="fade-up">What Parents Say</h2>
                 <p class="text-xl text-brand-muted max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
-                    Real reviews from parents who trust us with their children's martial arts journey
+                    Real testimonials from parents who trust us with their children's martial arts journey
                 </p>
             </div>
             
-            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div id="testimonials-container" class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                 <!-- Review 1 -->
                 <div class="bg-white rounded-xl p-6 shadow-lg" data-aos="fade-up" data-aos-delay="100">
                     <div class="flex items-center mb-4">
                         <div class="flex text-yellow-400 text-lg">
-                            ⭐⭐⭐⭐⭐
+                            <span class="material-icons text-yellow-400">star</span>
+                            <span class="material-icons text-yellow-400">star</span>
+                            <span class="material-icons text-yellow-400">star</span>
+                            <span class="material-icons text-yellow-400">star</span>
+                            <span class="material-icons text-yellow-400">star</span>
                         </div>
                         <span class="ml-2 text-sm text-gray-500">5.0</span>
                     </div>
@@ -187,7 +328,11 @@
                 <div class="bg-white rounded-xl p-6 shadow-lg" data-aos="fade-up" data-aos-delay="200">
                     <div class="flex items-center mb-4">
                         <div class="flex text-yellow-400 text-lg">
-                            ⭐⭐⭐⭐⭐
+                            <span class="material-icons text-yellow-400">star</span>
+                            <span class="material-icons text-yellow-400">star</span>
+                            <span class="material-icons text-yellow-400">star</span>
+                            <span class="material-icons text-yellow-400">star</span>
+                            <span class="material-icons text-yellow-400">star</span>
                         </div>
                         <span class="ml-2 text-sm text-gray-500">5.0</span>
                     </div>
@@ -209,7 +354,11 @@
                 <div class="bg-white rounded-xl p-6 shadow-lg" data-aos="fade-up" data-aos-delay="300">
                     <div class="flex items-center mb-4">
                         <div class="flex text-yellow-400 text-lg">
-                            ⭐⭐⭐⭐⭐
+                            <span class="material-icons text-yellow-400">star</span>
+                            <span class="material-icons text-yellow-400">star</span>
+                            <span class="material-icons text-yellow-400">star</span>
+                            <span class="material-icons text-yellow-400">star</span>
+                            <span class="material-icons text-yellow-400">star</span>
                         </div>
                         <span class="ml-2 text-sm text-gray-500">5.0</span>
                     </div>
@@ -228,53 +377,47 @@
                 </div>
             </div>
             
-            <!-- Google Reviews CTA -->
-            <div class="text-center mt-12" data-aos="fade-up" data-aos-delay="400">
-                <div class="bg-white rounded-xl p-8 shadow-lg max-w-md mx-auto">
-                    <div class="text-4xl mb-4">⭐</div>
-                    <h3 class="text-2xl font-semibold mb-2">4.9/5 Rating</h3>
-                    <p class="text-gray-600 mb-4">Based on 50+ Google Reviews</p>
-                    <a href="https://maps.google.com/?q=Royal+Arsenal+Martial+Arts+Dubai" 
-                       target="_blank" 
-                       class="bg-brand-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-brand-accent transition-colors inline-flex items-center">
-                        <span class="mr-2">📍</span>
-                        View All Reviews
-                    </a>
-                </div>
-            </div>
         </div>
     </section>
 
     <!-- Why RAMA Section -->
     <section class="py-20 bg-white">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-montserrat font-bold text-center mb-16" data-aos="fade-up">Why Royal Arsenal Martial Arts Academy?</h2>
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center justify-center w-16 h-16 bg-brand-primary bg-opacity-10 rounded-full mb-6" data-aos="zoom-in">
+                    <span class="material-icons text-3xl text-brand-primary">workspace_premium</span>
+                </div>
+                <h2 class="text-4xl font-montserrat font-bold mb-4" data-aos="fade-up">Why Royal Arsenal Martial Arts Academy?</h2>
+                <p class="text-xl text-brand-muted max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                    Join the UAE's most successful martial arts academy with a proven track record of developing champions and building character
+                </p>
+            </div>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div class="text-center p-6 rounded-xl bg-brand-bg" data-aos="fade-up">
                     <div class="w-16 h-16 bg-brand-primary rounded-full mx-auto mb-4 flex items-center justify-center">
-                        <span class="text-2xl">🛡️</span>
+                        <span class="material-icons text-2xl text-white">security</span>
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Safety First</h3>
                     <p class="text-brand-muted text-sm">Certified instructors, proper equipment, and supervised training ensure your child's safety.</p>
                 </div>
                 <div class="text-center p-6 rounded-xl bg-brand-bg" data-aos="fade-up" data-aos-delay="100">
                     <div class="w-16 h-16 bg-brand-primary rounded-full mx-auto mb-4 flex items-center justify-center">
-                        <span class="text-2xl">🏆</span>
+                        <span class="material-icons text-2xl text-white">emoji_events</span>
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Proven Results</h3>
                     <p class="text-brand-muted text-sm">17 UAE National Champions, 4 World Cup Winners, and 6 in the World's Top Ten.</p>
                 </div>
                 <div class="text-center p-6 rounded-xl bg-brand-bg" data-aos="fade-up" data-aos-delay="200">
                     <div class="w-16 h-16 bg-brand-primary rounded-full mx-auto mb-4 flex items-center justify-center">
-                        <span class="text-2xl">👥</span>
+                        <span class="material-icons text-2xl text-white">groups</span>
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Expert Coaches</h3>
                     <p class="text-brand-muted text-sm">Professional instructors with years of experience in martial arts and youth development.</p>
                 </div>
                 <div class="text-center p-6 rounded-xl bg-brand-bg" data-aos="fade-up" data-aos-delay="300">
                     <div class="w-16 h-16 bg-brand-primary rounded-full mx-auto mb-4 flex items-center justify-center">
-                        <span class="text-2xl">💯</span>
+                        <span class="material-icons text-2xl text-white">self_improvement</span>
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Personal Growth</h3>
                     <p class="text-brand-muted text-sm">Builds confidence, discipline, respect, and physical fitness in a supportive environment.</p>
@@ -289,25 +432,25 @@
             <h2 class="text-4xl font-montserrat font-bold text-center mb-16" data-aos="fade-up">Our Programs</h2>
             
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-xl p-8 shadow-lg" data-aos="fade-up">
+                <div class="card-enhanced bg-white rounded-xl p-8 shadow-lg slide-left interactive-element" data-aos="fade-up">
                     <div class="w-16 h-16 bg-brand-primary rounded-full mb-6 flex items-center justify-center">
-                        <span class="text-2xl">🥋</span>
+                        <span class="material-icons text-2xl text-white">school</span>
                     </div>
                     <h3 class="text-2xl font-semibold mb-4">Preparation</h3>
                     <p class="text-brand-muted mb-4">Foundations: stance, balance, coordination, fun drills. Ideal for beginners.</p>
                     <div class="text-sm text-brand-primary font-semibold">Perfect for: All ages starting out</div>
                 </div>
-                <div class="bg-white rounded-xl p-8 shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-enhanced bg-white rounded-xl p-8 shadow-lg interactive-element" data-aos="fade-up" data-aos-delay="100">
                     <div class="w-16 h-16 bg-brand-primary rounded-full mb-6 flex items-center justify-center">
-                        <span class="text-2xl">💪</span>
+                        <span class="material-icons text-2xl text-white">fitness_center</span>
                     </div>
                     <h3 class="text-2xl font-semibold mb-4">Development</h3>
                     <p class="text-brand-muted mb-4">Skills, combinations, conditioning, discipline. Builds confidence and focus.</p>
                     <div class="text-sm text-brand-primary font-semibold">Perfect for: Kids & Teens</div>
                 </div>
-                <div class="bg-white rounded-xl p-8 shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-enhanced bg-white rounded-xl p-8 shadow-lg slide-right interactive-element" data-aos="fade-up" data-aos-delay="200">
                     <div class="w-16 h-16 bg-brand-primary rounded-full mb-6 flex items-center justify-center">
-                        <span class="text-2xl">🥊</span>
+                        <span class="material-icons text-2xl text-white">emoji_events</span>
                     </div>
                     <h3 class="text-2xl font-semibold mb-4">Competition Team</h3>
                     <p class="text-brand-muted mb-4">Advanced tactics, ring craft, sparring under supervision; invite/coach approval.</p>
@@ -319,6 +462,37 @@
                 <a href="programs.html" class="bg-brand-primary text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-brand-accent transition-colors">
                     Learn More About Programs
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick FAQ Section -->
+    <section class="py-16 bg-brand-surface">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-montserrat font-bold text-center mb-12" data-aos="fade-up">Quick Questions?</h2>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white rounded-xl p-6 shadow-sm" data-aos="fade-up">
+                        <h3 class="font-semibold text-brand-secondary mb-2">What age groups do you accept?</h3>
+                        <p class="text-brand-muted text-sm">We welcome kids and teens aged 5-17 years, with programs tailored for different skill levels.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl p-6 shadow-sm" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="font-semibold text-brand-secondary mb-2">Is the first trial class really free?</h3>
+                        <p class="text-brand-muted text-sm">Yes! Your first class is completely free with no obligations. Come see if RAMA is right for your child.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl p-6 shadow-sm" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="font-semibold text-brand-secondary mb-2">What should my child wear?</h3>
+                        <p class="text-brand-muted text-sm">Comfortable athletic wear and bare feet for the trial. We'll provide all equipment needed.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl p-6 shadow-sm" data-aos="fade-up" data-aos-delay="300">
+                        <h3 class="font-semibold text-brand-secondary mb-2">How quickly will I see results?</h3>
+                        <p class="text-brand-muted text-sm">Most parents notice improved confidence and discipline within 2-3 weeks of regular training.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -413,15 +587,14 @@
 
     <!-- WhatsApp Floating Button -->
     <a href="https://wa.me/971501156988?text=Hi%20RAMA%20team!%20I'd%20like%20to%20book%20a%20free%20trial." target="_blank"
-       class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors z-40 animate-bounce">
-        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
-        </svg>
+       class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-xl hover:bg-green-600 transition-all duration-300 z-50 hover:scale-110 transform animate-pulse"
+       title="Chat with us on WhatsApp">
+        <span class="material-icons text-2xl">chat</span>
     </a>
 
     <!-- Mobile Call Button -->
     <a href="tel:+971501156988" class="fixed bottom-6 left-6 bg-brand-primary text-white px-4 py-2 rounded-full shadow-lg hover:bg-brand-accent transition-colors z-40 md:hidden">
-        📞 Call Now
+        <span class="material-icons mr-2">phone</span>Call Now
     </a>
 
     <!-- Footer -->
@@ -453,7 +626,7 @@
                 <!-- Contact Info -->
                 <div class="text-center md:text-right text-sm">
                     <div class="flex items-center justify-center md:justify-end space-x-4">
-                        <a href="tel:+971501156988" class="text-brand-muted hover:text-brand-primary transition-colors">📞 Call</a>
+                        <a href="tel:+971501156988" class="text-brand-muted hover:text-brand-primary transition-colors"><span class="material-icons mr-1 text-sm">phone</span>Call</a>
                         <a href="mailto:contact@royalarsenal.club" class="text-brand-muted hover:text-brand-primary transition-colors" target="_blank">contact@royalarsenal.club</a>
                     </div>
                 </div>

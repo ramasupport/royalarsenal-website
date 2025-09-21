@@ -13,6 +13,9 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
     <!-- Custom Styles -->
     <link rel="stylesheet" href="css/styles.css">
     
@@ -25,7 +28,8 @@
         <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
             <div class="flex items-center">
                 <a href="index.html">
-                    <img src="assets/logo/logo.jpg" alt="RAMA Logo" class="h-14 w-auto rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <img src="assets/logo/logo.jpg" alt="RAMA Logo" class="logo-light h-14 w-auto rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <img src="assets/logo/logo-dark.jpg" alt="RAMA Logo" class="logo-dark h-14 w-auto rounded-lg shadow-md hover:shadow-lg transition-shadow">
                 </a>
             </div>
             
@@ -65,6 +69,16 @@
             </div>
             
             <div class="flex items-center space-x-4">
+                <!-- Language Switcher -->
+                <div class="flex items-center bg-gray-100 rounded-full p-1">
+                    <a href="pricing.html" class="px-3 py-1 text-sm font-medium bg-brand-primary text-white rounded-full">
+                        EN
+                    </a>
+                    <a href="pricing-ar.html" class="px-3 py-1 text-sm font-medium text-gray-600 hover:text-brand-primary transition-colors rounded-full">
+                        عربي
+                    </a>
+                </div>
+                
                 <a href="contact.html" class="bg-gradient-to-r from-brand-primary to-brand-accent text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300 transform">
                     Book Free Trial
                 </a>
@@ -165,15 +179,52 @@
                 </div>
             </div>
             
-            <!-- Pricing Notes -->
-            <div class="text-center space-y-4" data-aos="fade-up" data-aos-delay="400">
+            <!-- Pricing Information Section -->
+            <div class="text-center space-y-6" data-aos="fade-up" data-aos-delay="400">
+                <!-- Annual Plans Notice -->
                 <div class="bg-brand-primary text-white px-6 py-3 rounded-full inline-block">
                     <span class="font-semibold">Annual plans include 1 month freeze</span>
                 </div>
-                <div class="bg-white rounded-lg p-4 shadow-sm max-w-4xl mx-auto">
-                    <div class="text-sm text-brand-muted">
-                        <span class="font-semibold">Prices exclude 5% VAT (added at checkout)</span> • 
-                        <span class="font-semibold">Sibling discount: 10% off for 2nd child, 15% off for 3rd child</span>
+                
+                <!-- Pricing Details Grid -->
+                <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+                    <!-- General Pricing Info -->
+                    <div class="bg-white rounded-xl p-6 shadow-lg border-l-4 border-brand-primary">
+                        <div class="flex items-center mb-4">
+                            <span class="material-icons text-brand-primary text-2xl mr-3">receipt</span>
+                            <h3 class="text-lg font-semibold text-brand-secondary">Pricing Details</h3>
+                        </div>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex items-center">
+                                <span class="material-icons text-brand-primary text-sm mr-2">info</span>
+                                <span class="font-semibold">Prices exclude 5% VAT (added at checkout)</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="material-icons text-green-500 text-sm mr-2">family_restroom</span>
+                                <span class="font-semibold">Sibling discount: 10% off for 2nd child, 15% off for 3rd child</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Training Uniform Info -->
+                    <div class="bg-white rounded-xl p-6 shadow-lg border-l-4 border-orange-500">
+                        <div class="flex items-center mb-4">
+                            <span class="material-icons text-orange-500 text-2xl mr-3">checkroom</span>
+                            <h3 class="text-lg font-semibold text-brand-secondary">Training Uniform</h3>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex items-center text-sm">
+                                <span class="material-icons text-orange-500 text-sm mr-2">warning</span>
+                                <span class="font-semibold text-orange-600">Training uniform not included in fees</span>
+                            </div>
+                            <div class="bg-brand-bg rounded-lg p-3 border border-orange-200">
+                                <div class="text-center">
+                                    <div class="text-lg font-bold text-brand-secondary">T-Shirt: AED 80</div>
+                                    <div class="text-xs text-brand-muted">(excluding 5% VAT)</div>
+                                    <div class="text-orange-600 font-medium text-sm mt-1">Must be purchased separately</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -186,29 +237,29 @@
             <h2 class="text-4xl font-montserrat font-bold text-center mb-16" data-aos="fade-up">What's Included in Every Plan</h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div class="text-center p-6 rounded-xl bg-white" data-aos="fade-up">
-                    <div class="w-16 h-16 bg-yellow-500 rounded-full mx-auto mb-4 flex items-center justify-center">
-                        <span class="text-2xl">🎓</span>
+                    <div class="w-16 h-16 bg-brand-primary rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <span class="material-icons text-2xl text-white">psychology</span>
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Expert Coaches</h3>
                     <p class="text-brand-muted text-sm">All coaches are experienced martial arts practitioners and undergo regular training updates.</p>
                 </div>
                 <div class="text-center p-6 rounded-xl bg-white" data-aos="fade-up" data-aos-delay="100">
                     <div class="w-16 h-16 bg-brand-primary rounded-full mx-auto mb-4 flex items-center justify-center">
-                        <span class="text-2xl">📊</span>
+                        <span class="material-icons text-2xl text-white">trending_up</span>
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Progress Tracking</h3>
                     <p class="text-brand-muted text-sm">Regular assessments and skill development tracking</p>
                 </div>
                 <div class="text-center p-6 rounded-xl bg-white" data-aos="fade-up" data-aos-delay="200">
                     <div class="w-16 h-16 bg-brand-primary rounded-full mx-auto mb-4 flex items-center justify-center">
-                        <span class="text-2xl">🏅</span>
+                        <span class="material-icons text-2xl text-white">military_tech</span>
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Belt Testing</h3>
                     <p class="text-brand-muted text-sm">Regular belt promotion tests and ceremonies</p>
                 </div>
                 <div class="text-center p-6 rounded-xl bg-white" data-aos="fade-up" data-aos-delay="300">
                     <div class="w-16 h-16 bg-brand-primary rounded-full mx-auto mb-4 flex items-center justify-center">
-                        <span class="text-2xl">🏆</span>
+                        <span class="material-icons text-2xl text-white">sports_kabaddi</span>
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Competition Training</h3>
                     <p class="text-brand-muted text-sm">Specialized training for athletes interested in competitions and tournaments</p>
@@ -266,7 +317,7 @@
                 <!-- Contact Info -->
                 <div class="text-center md:text-right text-sm">
                     <div class="flex items-center justify-center md:justify-end space-x-4">
-                        <a href="tel:+971501156988" class="text-brand-muted hover:text-brand-primary transition-colors">📞 Call</a>
+                        <a href="tel:+971501156988" class="text-brand-muted hover:text-brand-primary transition-colors"><span class="material-icons mr-1 text-sm">phone</span>Call</a>
                         <a href="mailto:contact@royalarsenal.club" target="_blank" class="text-brand-muted hover:text-brand-primary transition-colors">contact@royalarsenal.club</a>
                     </div>
                     

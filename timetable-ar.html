@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الجدول الزمني - الأكاديمية الملكية للفنون القتالية</title>
+    <meta name="description" content="جدول الحصص الأسبوعي للأكاديمية الملكية للفنون القتالية. اعثر على الوقت المثالي لحصة طفلك مع مدربين معتمدين.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- Noto Sans Arabic for Arabic text -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/logo/positive.svg">
+</head>
+<body class="font-arabic bg-brand-bg text-brand-secondary" dir="rtl">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-xl border-b border-brand-primary/20">
+        <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center">
+                <a href="index-ar.html">
+                    <img src="assets/logo/logo.jpg" alt="شعار راما" class="logo-light h-14 w-auto rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <img src="assets/logo/logo-dark.jpg" alt="شعار راما" class="logo-dark h-14 w-auto rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                </a>
+            </div>
+            
+            <div class="hidden lg:flex space-x-8 space-x-reverse">
+                <a href="index-ar.html" class="text-brand-secondary hover:text-brand-primary transition-colors font-medium relative group">
+                    الرئيسية
+                    <span class="absolute -bottom-1 right-0 w-0 h-0.5 bg-brand-primary transition-all group-hover:w-full"></span>
+                </a>
+                <a href="programs-ar.html" class="text-brand-secondary hover:text-brand-primary transition-colors font-medium relative group">
+                    البرامج
+                    <span class="absolute -bottom-1 right-0 w-0 h-0.5 bg-brand-primary transition-all group-hover:w-full"></span>
+                </a>
+                <a href="pricing-ar.html" class="text-brand-secondary hover:text-brand-primary transition-colors font-medium relative group">
+                    الأسعار
+                    <span class="absolute -bottom-1 right-0 w-0 h-0.5 bg-brand-primary transition-all group-hover:w-full"></span>
+                </a>
+                <a href="timetable-ar.html" class="text-brand-primary font-medium relative group">
+                    الجدول الزمني
+                    <span class="absolute -bottom-1 right-0 w-full h-0.5 bg-brand-primary"></span>
+                </a>
+                <a href="coaches-ar.html" class="text-brand-secondary hover:text-brand-primary transition-colors font-medium relative group">
+                    المدربون
+                    <span class="absolute -bottom-1 right-0 w-0 h-0.5 bg-brand-primary transition-all group-hover:w-full"></span>
+                </a>
+                <a href="competitions-ar.html" class="text-brand-secondary hover:text-brand-primary transition-colors font-medium relative group">
+                    المسابقات
+                    <span class="absolute -bottom-1 right-0 w-0 h-0.5 bg-brand-primary transition-all group-hover:w-full"></span>
+                </a>
+                <a href="enrollment-ar.html" class="text-brand-secondary hover:text-brand-primary transition-colors font-medium relative group">
+                    التسجيل
+                    <span class="absolute -bottom-1 right-0 w-0 h-0.5 bg-brand-primary transition-all group-hover:w-full"></span>
+                </a>
+                <a href="contact-ar.html" class="text-brand-secondary hover:text-brand-primary transition-colors font-medium relative group">
+                    اتصل بنا
+                    <span class="absolute -bottom-1 right-0 w-0 h-0.5 bg-brand-primary transition-all group-hover:w-full"></span>
+                </a>
+            </div>
+            
+            <div class="flex items-center space-x-4 space-x-reverse">
+                <!-- Language Switcher -->
+                <div class="flex items-center bg-gray-100 rounded-full p-1">
+                    <a href="timetable.html" class="px-3 py-1 text-sm font-medium text-gray-600 hover:text-brand-primary transition-colors rounded-full">
+                        EN
+                    </a>
+                    <a href="timetable-ar.html" class="px-3 py-1 text-sm font-medium bg-brand-primary text-white rounded-full">
+                        عربي
+                    </a>
+                </div>
+                
+                <a href="contact-ar.html" class="bg-gradient-to-r from-brand-primary to-brand-accent text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300 transform">
+                    احجز تجربة مجانية
+                </a>
+                
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-btn" class="lg:hidden p-2 text-brand-secondary hover:text-brand-primary transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="lg:hidden hidden bg-white border-t border-brand-primary/20 shadow-lg">
+            <div class="container mx-auto px-4 py-4 space-y-4">
+                <a href="index-ar.html" class="block text-brand-secondary hover:text-brand-primary transition-colors font-medium py-2">الرئيسية</a>
+                <a href="programs-ar.html" class="block text-brand-secondary hover:text-brand-primary transition-colors font-medium py-2">البرامج</a>
+                <a href="pricing-ar.html" class="block text-brand-secondary hover:text-brand-primary transition-colors font-medium py-2">الأسعار</a>
+                <a href="timetable-ar.html" class="block text-brand-primary font-medium py-2">الجدول الزمني</a>
+                <a href="coaches-ar.html" class="block text-brand-secondary hover:text-brand-primary transition-colors font-medium py-2">المدربون</a>
+                <a href="competitions-ar.html" class="block text-brand-secondary hover:text-brand-primary transition-colors font-medium py-2">المسابقات</a>
+                <a href="enrollment-ar.html" class="block text-brand-secondary hover:text-brand-primary transition-colors font-medium py-2">التسجيل</a>
+                <a href="contact-ar.html" class="block text-brand-secondary hover:text-brand-primary transition-colors font-medium py-2">اتصل بنا</a>
+                
+                <!-- Mobile Language Switcher -->
+                <div class="flex items-center justify-center space-x-2 space-x-reverse pt-4 border-t border-gray-200">
+                    <a href="timetable.html" class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-brand-primary transition-colors border border-gray-300 rounded-full">
+                        English
+                    </a>
+                    <a href="timetable-ar.html" class="px-4 py-2 text-sm font-medium bg-brand-primary text-white rounded-full">
+                        عربي
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-brand-bg to-brand-surface py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-5xl md:text-6xl font-montserrat font-bold text-brand-secondary mb-6" data-aos="fade-up">
+                الجدول الزمني للحصص
+            </h1>
+            <p class="text-xl text-brand-muted mb-8 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                اعثر على الوقت المثالي لحصة طفلك. جميع الحصص مصممة للأطفال والمراهقين مع مدربين معتمدين.
+            </p>
+        </div>
+    </section>
+
+    <!-- Timetable Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <!-- Filter Buttons -->
+            <div class="text-center mb-12">
+                <div class="inline-flex flex-wrap gap-2 bg-gray-100 p-2 rounded-full">
+                    <button onclick="filterTimetable('all')" class="px-4 py-2 rounded-full text-sm font-medium bg-brand-primary text-white">
+                        جميع البرامج
+                    </button>
+                    <button onclick="filterTimetable('preparation')" class="px-4 py-2 rounded-full text-sm font-medium text-gray-600 hover:text-brand-primary">
+                        التحضيري
+                    </button>
+                    <button onclick="filterTimetable('development')" class="px-4 py-2 rounded-full text-sm font-medium text-gray-600 hover:text-brand-primary">
+                        التطوير
+                    </button>
+                    <button onclick="filterTimetable('competition')" class="px-4 py-2 rounded-full text-sm font-medium text-gray-600 hover:text-brand-primary">
+                        المنافسات
+                    </button>
+                    <button onclick="filterTimetable('mixed')" class="px-4 py-2 rounded-full text-sm font-medium text-gray-600 hover:text-brand-primary">
+                        المختلط
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Timetable -->
+            <div class="overflow-x-auto">
+                <table id="timetable" class="w-full bg-white rounded-xl shadow-lg overflow-hidden">
+                    <thead class="bg-brand-primary text-white">
+                        <tr>
+                            <th class="px-3 md:px-6 py-3 md:py-4 text-right text-sm md:text-base">اليوم</th>
+                            <th class="px-3 md:px-6 py-3 md:py-4 text-right text-sm md:text-base">الحصة 1</th>
+                            <th class="px-3 md:px-6 py-3 md:py-4 text-right text-sm md:text-base">الحصة 2</th>
+                            <th class="px-3 md:px-6 py-3 md:py-4 text-right text-sm md:text-base">الحصة 3</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr>
+                            <td class="px-3 md:px-6 py-3 md:py-4 font-semibold text-sm md:text-base">الاثنين</td>
+                            <td class="px-3 md:px-6 py-3 md:py-4 text-sm md:text-base" data-program="competition">6:00-7:30 مساءً<br><span class="text-brand-primary text-xs md:text-sm">فريق المنافسات</span></td>
+                            <td class="px-3 md:px-6 py-3 md:py-4 text-brand-muted text-sm md:text-base" data-program="">-</td>
+                            <td class="px-3 md:px-6 py-3 md:py-4 text-brand-muted text-sm md:text-base" data-program="">-</td>
+                        </tr>
+                        <tr>
+                            <td class="px-3 md:px-6 py-3 md:py-4 font-semibold text-sm md:text-base">الثلاثاء</td>
+                            <td class="px-3 md:px-6 py-3 md:py-4 text-sm md:text-base" data-program="preparation">4:00-5:00 مساءً<br><span class="text-brand-primary text-xs md:text-sm">التحضيري</span></td>
+                            <td class="px-3 md:px-6 py-3 md:py-4 text-sm md:text-base" data-program="development">5:00-6:00 مساءً<br><span class="text-brand-primary text-xs md:text-sm">التطوير</span></td>
+                            <td class="px-3 md:px-6 py-3 md:py-4 text-sm md:text-base" data-program="competition">6:00-7:30 مساءً<br><span class="text-brand-primary text-xs md:text-sm">فريق المنافسات</span></td>
+                        </tr>
+                        <tr>
+                            <td class="px-3 md:px-6 py-3 md:py-4 font-semibold text-sm md:text-base">الأربعاء</td>
+                            <td class="px-3 md:px-6 py-3 md:py-4 text-sm md:text-base" data-program="development">5:00-6:00 مساءً<br><span class="text-brand-primary text-xs md:text-sm">التطوير</span></td>
+                            <td class="px-3 md:px-6 py-3 md:py-4 text-sm md:text-base" data-program="competition">6:00-7:30 مساءً<br><span class="text-brand-primary text-xs md:text-sm">فريق المنافسات</span></td>
+                            <td class="px-3 md:px-6 py-3 md:py-4 text-brand-muted text-sm md:text-base" data-program="">-</td>
+                        </tr>
+                        <tr>
+                            <td class="px-3 md:px-6 py-3 md:py-4 font-semibold text-sm md:text-base">الخميس</td>
+                            <td class="px-3 md:px-6 py-3 md:py-4 text-sm md:text-base" data-program="development">5:00-6:00 مساءً<br><span class="text-brand-primary text-xs md:text-sm">التطوير</span></td>
+                            <td class="px-3 md:px-6 py-3 md:py-4 text-sm md:text-base" data-program="competition">6:00-7:30 مساءً<br><span class="text-brand-primary text-xs md:text-sm">فريق المنافسات</span></td>
+                            <td class="px-3 md:px-6 py-3 md:py-4 text-brand-muted text-sm md:text-base" data-program="">-</td>
+                        </tr>
+                        <tr>
+                            <td class="px-3 md:px-6 py-3 md:py-4 font-semibold text-sm md:text-base">الجمعة</td>
+                            <td class="px-3 md:px-6 py-3 md:py-4 text-sm md:text-base" data-program="development">2:00-3:00 مساءً<br><span class="text-brand-primary text-xs md:text-sm">التطوير</span></td>
+                            <td class="px-3 md:px-6 py-3 md:py-4 text-sm md:text-base" data-program="preparation">3:00-4:00 مساءً<br><span class="text-brand-primary text-xs md:text-sm">التحضيري</span></td>
+                            <td class="px-3 md:px-6 py-3 md:py-4 text-sm md:text-base" data-program="competition">4:00-5:30 مساءً<br><span class="text-brand-primary text-xs md:text-sm">فريق المنافسات</span></td>
+                        </tr>
+                        <tr>
+                            <td class="px-3 md:px-6 py-3 md:py-4 font-semibold text-sm md:text-base">السبت</td>
+                            <td class="px-3 md:px-6 py-3 md:py-4 text-sm md:text-base" data-program="mixed">3:30-4:30 مساءً<br><span class="text-brand-primary text-xs md:text-sm">المختلط</span></td>
+                            <td class="px-3 md:px-6 py-3 md:py-4 text-brand-muted text-sm md:text-base" data-program="">-</td>
+                            <td class="px-3 md:px-6 py-3 md:py-4 text-brand-muted text-sm md:text-base" data-program="">-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="text-center text-brand-muted mt-4" data-aos="fade-up" data-aos-delay="600">
+                <em>الحصص تستمر في العطل الرسمية الإماراتية - يرجى الاتصال لتأكيد الجدول</em>
+            </p>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-brand-primary">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-montserrat font-bold text-white mb-6" data-aos="fade-up">
+                هل أنت مستعد لبدء التدريب؟
+            </h2>
+            <p class="text-xl text-brand-bg mb-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                احجز حصتك التجريبية المجانية واختبر تدريبنا عالمي المستوى بنفسك.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6" data-aos="fade-up" data-aos-delay="400">
+                <a href="contact-ar.html" class="bg-white text-brand-primary px-8 py-4 rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300 transform">
+                    احجز تجربة مجانية
+                </a>
+                <a href="pricing-ar.html" class="bg-transparent text-white px-8 py-4 rounded-full font-semibold border-2 border-white hover:bg-white hover:text-brand-primary transition-all duration-300">
+                    عرض الأسعار
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-secondary text-white py-6">
+        <div class="container mx-auto px-4">
+            <!-- Main Footer Content -->
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 mb-4">
+                <!-- Brand Section -->
+                <div class="flex items-center space-x-4 space-x-reverse">
+                    <img src="assets/logo/logo-dark.jpg" alt="شعار راما" class="h-10 w-auto rounded-lg shadow-md">
+                    <div>
+                        <p class="text-white text-sm font-semibold">الأكاديمية الملكية للفنون القتالية</p>
+                        <p class="text-xs text-brand-muted">مرخصة: 1523793</p>
+                    </div>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 md:space-x-reverse text-sm">
+                    <a href="tel:+971501156988" class="text-gray-300 hover:text-brand-primary transition-colors">
+                        <span class="material-icons ml-1 text-sm">phone</span>اتصل
+                    </a>
+                    <a href="mailto:contact@royalarsenal.club" class="text-gray-300 hover:text-brand-primary transition-colors">
+                        <span class="material-icons ml-1 text-sm">email</span>راسلنا
+                    </a>
+                    <a href="https://wa.me/971501156988" target="_blank" class="text-gray-300 hover:text-brand-primary transition-colors">
+                        <span class="material-icons ml-1 text-sm">chat</span>واتساب
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="border-t border-gray-700 pt-4 text-center text-sm text-gray-400">
+                <p>الأكاديمية الملكية للفنون القتالية. جميع الحقوق محفوظة &copy; 2025.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 100
+        });
+
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
